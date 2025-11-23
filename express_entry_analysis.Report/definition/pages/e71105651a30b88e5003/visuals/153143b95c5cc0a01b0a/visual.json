@@ -4,10 +4,10 @@
   "position": {
     "x": 629.84126984126988,
     "y": 0,
-    "z": 3,
+    "z": 2000,
     "height": 246.85714285714286,
     "width": 650.15873015873012,
-    "tabOrder": 3
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -60,23 +60,5 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ac899a236acbb900ab3e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Rounds of Invitations"
-              }
-            },
-            "Property": "Round Type"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

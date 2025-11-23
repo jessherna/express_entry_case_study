@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "d0e2725abaca096174a6",
+  "name": "47b55201b74878030194",
   "position": {
-    "x": 9.8599439775910351,
-    "y": 88.739495798319325,
-    "z": 5,
-    "height": 631.03641456582625,
-    "width": 1270.1400560224088,
-    "tabOrder": 4
+    "x": 122.2110552763819,
+    "y": 237.9899497487437,
+    "z": 5000,
+    "height": 481.49318018664746,
+    "width": 1151.356783919598,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,12 +23,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Total Invitations"
+                  "Property": "Format TTL Invitations"
                 }
               },
-              "queryRef": "_Measures.Total Invitations",
-              "nativeQueryRef": "Total Invitations",
-              "format": "#,0"
+              "queryRef": "_Measures.Format TTL Invitations",
+              "nativeQueryRef": "Invitations Issued",
+              "displayName": "Invitations Issued"
             },
             {
               "field": {
@@ -38,11 +38,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Lowest CRS Score"
+                  "Property": "Format MIN CRS"
                 }
               },
-              "queryRef": "_Measures.Lowest CRS Score",
-              "nativeQueryRef": "Lowest CRS Score"
+              "queryRef": "_Measures.Format MIN CRS",
+              "nativeQueryRef": "Lowest CRS Score",
+              "displayName": "Lowest CRS Score"
             }
           ]
         },
@@ -69,19 +70,18 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "_Measures"
+                    "Entity": "Rounds of Invitations"
                   }
                 },
-                "Property": "Total Invitations"
+                "Property": "Round Type"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "objects": {
@@ -126,7 +126,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "0L"
+                  "Value": "2L"
                 }
               }
             },
@@ -143,6 +143,13 @@
                   "Value": "0L"
                 }
               }
+            },
+            "calloutSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "65D"
+                }
+              }
             }
           }
         },
@@ -155,17 +162,36 @@
                 }
               }
             },
-            "paddingUniform": {
-              "expr": {
-                "Literal": {
-                  "Value": "8L"
-                }
-              }
-            },
             "rectangleRoundedCurve": {
               "expr": {
                 "Literal": {
                   "Value": "4L"
+                }
+              }
+            },
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            },
+            "paddingIndividual": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "backgroundFillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 7,
+                      "Percent": 0.6
+                    }
+                  }
                 }
               }
             }
@@ -189,6 +215,13 @@
               "expr": {
                 "Literal": {
                   "Value": "0D"
+                }
+              }
+            },
+            "titleOrientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
@@ -217,7 +250,7 @@
             "gridlineShow": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -250,7 +283,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "11.7D"
                 }
               }
             },
@@ -264,14 +297,14 @@
             "paddingUniform": {
               "expr": {
                 "Literal": {
-                  "Value": "0L"
+                  "Value": "2L"
                 }
               }
             },
             "backgroundShow": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -284,6 +317,46 @@
                       "Percent": 0.6
                     }
                   }
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backgroundTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "60D"
                 }
               }
             }
@@ -376,7 +449,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -399,7 +472,28 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "9D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "heading": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Heading4'"
                 }
               }
             }
@@ -426,7 +520,21 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "22D"
+                  "Value": "23D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
                 }
               }
             }
@@ -439,62 +547,6 @@
       "referenceLabel": [
         {
           "properties": {
-            "value": {
-              "expr": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "Invitations PY Gap"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 0
-                }
-              }
-            ],
-            "metadata": "_Measures.Total Invitations",
-            "id": "field-fa12c31d-ab54-bb02-b2c8-149dbd1102a3",
-            "order": 0
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "CRS PY Gap"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 0
-                }
-              }
-            ],
-            "metadata": "_Measures.Lowest CRS Score",
-            "id": "field-a911030c-c731-8451-482b-ee0bc746906d",
-            "order": 0
-          }
-        },
-        {
-          "properties": {
             "backgroundShow": {
               "expr": {
                 "Literal": {
@@ -505,7 +557,168 @@
             "paddingUniform": {
               "expr": {
                 "Literal": {
-                  "Value": "0L"
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-ed4cf801-295b-cdf9-14ce-f3d50632ddcc",
+            "order": 0
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-f4bc2311-5680-b7f9-e26a-bb2f43bb653d",
+            "order": 0
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-1b62340d-9693-1c6c-812d-ade4668f5e9b",
+            "order": 0
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-e83a1d5b-4608-a11f-15fd-c104fcc60396",
+            "order": 0
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0c397012-215b-89c3-70e0-6d4f39618b94",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Invitations PY Gap with Arrow"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0db0092d-b147-328d-559e-64bf1ee8cba0",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "CRS PY Gap with Arrow"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Format MIN CRS",
+            "id": "field-7785d803-4556-db57-881e-9a2e1348a5e7",
+            "order": 0
+          }
+        }
+      ],
+      "referenceLabelLayout": [
+        {
+          "properties": {
+            "labelSpace": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "style": {
+              "expr": {
+                "Literal": {
+                  "Value": "'tabular'"
                 }
               }
             }
@@ -528,7 +741,7 @@
             "titleText": {
               "expr": {
                 "Literal": {
-                  "Value": "'vs Previous Year:'"
+                  "Value": "'vs Previous Year'"
                 }
               }
             },
@@ -541,22 +754,8 @@
             }
           },
           "selector": {
-            "metadata": "_Measures.Total Invitations",
-            "id": "field-fa12c31d-ab54-bb02-b2c8-149dbd1102a3"
-          }
-        },
-        {
-          "properties": {
-            "titleFontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.Lowest CRS Score"
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-f4bc2311-5680-b7f9-e26a-bb2f43bb653d"
           }
         },
         {
@@ -571,25 +770,182 @@
             "titleText": {
               "expr": {
                 "Literal": {
-                  "Value": "'vs Previous Year:'"
+                  "Value": "'Last Year:'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0c397012-215b-89c3-70e0-6d4f39618b94"
+          }
+        },
+        {
+          "properties": {
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
                 }
               }
             },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vs Prev Year'"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "titleFontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0db0092d-b147-328d-559e-64bf1ee8cba0"
+          }
+        },
+        {
+          "properties": {
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vs Prev Year'"
+                }
+              }
+            },
+            "titleFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
+            },
+            "titleFontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Format MIN CRS",
+            "id": "field-7785d803-4556-db57-881e-9a2e1348a5e7"
+          }
+        }
+      ],
+      "referenceLabelDetail": [
+        {
+          "properties": {
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "detailBackgroundColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "detailFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "detailFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
             }
           },
           "selector": {
-            "metadata": "_Measures.Lowest CRS Score",
-            "id": "field-a911030c-c731-8451-482b-ee0bc746906d"
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0c397012-215b-89c3-70e0-6d4f39618b94"
           }
         },
         {
-          "properties": {},
+          "properties": {
+            "detailValue": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Invitations PY Gap with Arrow"
+                }
+              }
+            }
+          },
           "selector": {
             "data": [
               {
@@ -598,91 +954,40 @@
                 }
               }
             ],
-            "metadata": "_Measures.Lowest CRS Score",
-            "id": "field-a911030c-c731-8451-482b-ee0bc746906d"
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0c397012-215b-89c3-70e0-6d4f39618b94"
           }
         }
       ],
       "referenceLabelValue": [
         {
           "properties": {
-            "valueFontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Conditional": {
-                      "Cases": [
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 2,
-                              "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "_Measures"
-                                    }
-                                  },
-                                  "Property": "CRS PY Gap"
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "0D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#118DFF'"
-                            }
-                          }
-                        },
-                        {
-                          "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 3,
-                              "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "_Measures"
-                                    }
-                                  },
-                                  "Property": "CRS PY Gap"
-                                }
-                              },
-                              "Right": {
-                                "Literal": {
-                                  "Value": "0D"
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#D64550'"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
+            "valueFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
                 }
               }
             }
           },
           "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 0
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0c397012-215b-89c3-70e0-6d4f39618b94"
+          }
+        },
+        {
+          "properties": {
+            "valueFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
                 }
               }
-            ],
-            "metadata": "_Measures.Lowest CRS Score",
-            "id": "field-a911030c-c731-8451-482b-ee0bc746906d"
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0db0092d-b147-328d-559e-64bf1ee8cba0"
           }
         },
         {
@@ -716,7 +1021,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#118DFF'"
+                              "Value": "'#28B45A'"
                             }
                           }
                         },
@@ -762,18 +1067,177 @@
                 }
               }
             ],
-            "metadata": "_Measures.Total Invitations",
-            "id": "field-fa12c31d-ab54-bb02-b2c8-149dbd1102a3"
+            "metadata": "_Measures.Format TTL Invitations",
+            "id": "field-0db0092d-b147-328d-559e-64bf1ee8cba0"
+          }
+        },
+        {
+          "properties": {
+            "valueFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Format MIN CRS",
+            "id": "field-7785d803-4556-db57-881e-9a2e1348a5e7"
+          }
+        },
+        {
+          "properties": {
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "_Measures"
+                                    }
+                                  },
+                                  "Property": "CRS PY Gap"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#2B9841'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "_Measures"
+                                    }
+                                  },
+                                  "Property": "CRS PY Gap"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#D64550'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Format MIN CRS",
+            "id": "field-7785d803-4556-db57-881e-9a2e1348a5e7"
           }
         }
       ],
-      "referenceLabelLayout": [
+      "padding": [
         {
           "properties": {
-            "labelSpace": {
+            "paddingUniform": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "5L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "smallMultiplesCellBackGround": [
+        {
+          "properties": {
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "backgroundFillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "cardImage": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "imageType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'imageUrl'"
+                }
+              }
+            },
+            "imageUrl": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Invitations Sparkline"
                 }
               }
             }
@@ -792,6 +1256,53 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

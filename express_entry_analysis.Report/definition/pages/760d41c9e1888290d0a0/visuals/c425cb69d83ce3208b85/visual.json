@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "7014b49f81607ddb3102",
+  "name": "c425cb69d83ce3208b85",
   "position": {
-    "x": 1101.6246498599439,
-    "y": 16.134453781512605,
-    "z": 2,
-    "height": 72.605042016806721,
-    "width": 167.61904761904759,
-    "tabOrder": 2
+    "x": 1092.1571772253408,
+    "y": 10.264635124298316,
+    "z": 3000,
+    "height": 71.8524458700882,
+    "width": 168.34001603849237,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -100,7 +100,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "2023L"
+                                "Value": "2025L"
                               }
                             }
                           ]
@@ -133,7 +133,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "2023L"
+                                      "Value": "2025L"
                                     }
                                   }
                                 ]
@@ -157,7 +157,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "2023"
+                            "0": "2025"
                           }
                         ]
                       }
@@ -198,28 +198,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "30d87a1e625330be120a",
-        "field": {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Calendar"
-                  }
-                },
-                "Hierarchy": "Date Hierarchy"
-              }
-            },
-            "Level": "Year"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

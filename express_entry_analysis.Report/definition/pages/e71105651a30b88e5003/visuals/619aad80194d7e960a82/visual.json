@@ -4,10 +4,10 @@
   "position": {
     "x": 211.30158730158729,
     "y": 57.904761904761905,
-    "z": 5,
+    "z": 4000,
     "height": 97.523809523809518,
     "width": 201.14285714285714,
-    "tabOrder": 5
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "card",
@@ -89,28 +89,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4ff767a57d532cc09c41",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Rounds of Invitations"
-                  }
-                },
-                "Property": "Lowest CRS Score"
-              }
-            },
-            "Function": 3
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

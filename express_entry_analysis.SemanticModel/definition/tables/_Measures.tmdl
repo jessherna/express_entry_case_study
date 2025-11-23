@@ -27,6 +27,157 @@ table _Measures
 		formatString: 0
 		lineageTag: c0a04d09-13ad-404b-a81f-1c289e8a4fed
 
+	measure 'Invitations PY Gap with Arrow' =
+			
+			VAR uparrow = UNICHAR(129129)
+			VAR downarrow = UNICHAR(129131)
+			VAR invitationgap = IF(ISBLANK([Invitations PY Gap]), 0, [Invitations PY Gap])
+			
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    invitationgap = 0, "--",
+			    invitationgap < 0, FORMAT(invitationgap, "##,###") & " " & downarrow,
+			    invitationgap > 0, FORMAT(invitationgap, "##,###") & " " & uparrow
+			)
+		lineageTag: e22908ff-d10d-4e30-86a6-c78e48c4541e
+
+	measure 'Format TTL Invitations' = IF(ISBLANK([Total Invitations]), "--", FORMAT([Total Invitations], "##,###"))
+		lineageTag: a8284ecf-b28f-42b4-8fbe-5f8cb4dc9718
+
+	measure 'Format MIN CRS' = IF(ISBLANK([Lowest CRS Score]), "--", FORMAT([Lowest CRS Score], "##,###"))
+		lineageTag: bc8c30e1-8c8e-4261-876e-97eafbf545b1
+
+	measure 'Format Invitations PY' = IF(ISBLANK([Invitations PY]), "--", FORMAT([Invitations PY], "##,###"))
+		lineageTag: b7ca43be-1735-4897-b237-7b1878ac8d19
+
+	measure 'CRS/Invite Ratio' = DIVIDE([Lowest CRS Score], [Total Invitations])
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f4b4314f-7a6d-4449-8258-92538fcd357f
+
+	measure 'CRS PY Gap with Arrow' =
+			
+			VAR uparrow = UNICHAR(129129)
+			VAR downarrow = UNICHAR(129131)
+			VAR crsgap = IF(ISBLANK([CRS PY Gap]), 0, [CRS PY Gap])
+			
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    crsgap = 0, "--",
+			    crsgap < 0, " " & FORMAT(crsgap, "##,###") & " " & downarrow,
+			    crsgap > 0, "     " & FORMAT(crsgap, "##,###") & " " & uparrow
+			)
+		lineageTag: 42dff0dd-ab68-428d-9831-121bdfb05296
+
+	measure 'Invitations Sparkline' = ```
+			
+			// Static line color - use %23 instead of # for Firefox compatibility (Measure Derived from Eldersveld Modified by Kolosko)
+			VAR LineColour = "%23118DFF"
+			VAR PointColour = "white"
+			VAR Defs = "<defs>
+			    <linearGradient id='grad' x1='0' y1='25' x2='0' y2='50' gradientUnits='userSpaceOnUse'>
+			        <stop stop-color='#118DFF' offset='0' />
+			        <stop stop-color='#118DFF' offset='0.3' />
+			        <stop stop-color='white' offset='1' />
+			    </linearGradient>
+			</defs>"
+			// "Date" field used in this example along the X axis
+			VAR XMinDate = MIN('Calendar'[Date])
+			VAR XMaxDate = MAX('Calendar'[Date])
+			
+			// Obtain overall min and overall max measure values when evaluated for each date
+			VAR YMinValue = MINX(Values('Calendar'[Date]),CALCULATE([Total Invitations]))
+			VAR YMaxValue = MAXX(Values('Calendar'[Date]),CALCULATE([Total Invitations]))
+			
+			// Build table of X & Y coordinates and fit to 50 x 150 viewbox
+			VAR SparklineTable = ADDCOLUMNS(
+			    SUMMARIZE('Rounds of Invitations', 'Calendar'[Date]),
+			        "X",INT(150 * DIVIDE('Calendar'[Date] - XMinDate, XMaxDate - XMinDate)),
+			        "Y",INT(50 * DIVIDE([Total Invitations] - YMinValue,YMaxValue - YMinValue)))
+			
+			// Concatenate X & Y coordinates to build the sparkline
+			VAR Lines = CONCATENATEX(SparklineTable,[X] & "," & 50-[Y]," ", 'Calendar'[Date])
+			
+			// Last data points on the line
+			VAR LastSparkYValue = MAXX( FILTER(SparklineTable, 'Calendar'[Date] = XMaxDate), [Y])
+			VAR LastSparkXValue = MAXX( FILTER(SparklineTable, 'Calendar'[Date] = XMaxDate), [X])
+			
+			// Add to SVG, and verify Data Category is set to Image URL for this measure
+			VAR SVGImageURL = 
+			    "data:image/svg+xml;utf8," & 
+			    --- gradient---
+			    "<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='-7 -7 164 64'>" & Defs & 
+			     "<polyline fill='url(#grad)' fill-opacity='0.3' stroke='transparent' 
+			      stroke-width='0' points=' 0 50 " & Lines & 
+			      " 150 150 Z '/>" &
+			    --- Lines---
+			    "<polyline 
+			        fill='transparent' stroke='" & LineColour & "' 
+			        stroke-linecap='round' stroke-linejoin='round' 
+			        stroke-width='1' points=' " & Lines & 
+			      " '/>" &
+			    --- Last Point---
+			        "<circle cx='"& LastSparkXValue & "' cy='" & 50 - LastSparkYValue & "' r='2' stroke='" & LineColour & "' stroke-width='2' fill='" & PointColour & "' />" &
+			        "</svg>"
+			RETURN SVGImageURL
+			```
+		lineageTag: 16a7e35c-0dfe-4e69-b912-3338cd4e4b64
+
+	measure 'CRS Sparkline' = ```
+			
+			// Static line color - use %23 instead of # for Firefox compatibility (Measure Derived from Eldersveld Modified by Kolosko)
+			VAR LineColour = "%23118DFF"
+			VAR PointColour = "white"
+			VAR Defs = "<defs>
+			    <linearGradient id='grad' x1='0' y1='25' x2='0' y2='50' gradientUnits='userSpaceOnUse'>
+			        <stop stop-color='#118DFF' offset='0' />
+			        <stop stop-color='#118DFF' offset='0.3' />
+			        <stop stop-color='white' offset='1' />
+			    </linearGradient>
+			</defs>"
+			// "Date" field used in this example along the X axis
+			VAR XMinDate = MIN('Calendar'[Date])
+			VAR XMaxDate = MAX('Calendar'[Date])
+			
+			// Obtain overall min and overall max measure values when evaluated for each date
+			VAR YMinValue = MINX(Values('Calendar'[Date]),CALCULATE([Lowest CRS Score]))
+			VAR YMaxValue = MAXX(Values('Calendar'[Date]),CALCULATE([Lowest CRS Score]))
+			
+			// Build table of X & Y coordinates and fit to 50 x 150 viewbox
+			VAR SparklineTable = ADDCOLUMNS(
+			    SUMMARIZE('Rounds of Invitations', 'Calendar'[Date]),
+			        "X",INT(150 * DIVIDE('Calendar'[Date] - XMinDate, XMaxDate - XMinDate)),
+			        "Y",INT(50 * DIVIDE([Lowest CRS Score] - YMinValue,YMaxValue - YMinValue)))
+			
+			// Concatenate X & Y coordinates to build the sparkline
+			VAR Lines = CONCATENATEX(SparklineTable,[X] & "," & 50-[Y]," ", 'Calendar'[Date])
+			
+			// Last data points on the line
+			VAR LastSparkYValue = MAXX( FILTER(SparklineTable, 'Calendar'[Date] = XMaxDate), [Y])
+			VAR LastSparkXValue = MAXX( FILTER(SparklineTable, 'Calendar'[Date] = XMaxDate), [X])
+			
+			// Add to SVG, and verify Data Category is set to Image URL for this measure
+			VAR SVGImageURL = 
+			    "data:image/svg+xml;utf8," & 
+			    --- gradient---
+			    "<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='-7 -7 164 64'>" & Defs & 
+			     "<polyline fill='url(#grad)' fill-opacity='0.3' stroke='transparent' 
+			      stroke-width='0' points=' 0 50 " & Lines & 
+			      " 150 150 Z '/>" &
+			    --- Lines---
+			    "<polyline 
+			        fill='transparent' stroke='" & LineColour & "' 
+			        stroke-linecap='round' stroke-linejoin='round' 
+			        stroke-width='1' points=' " & Lines & 
+			      " '/>" &
+			    --- Last Point---
+			        "<circle cx='"& LastSparkXValue & "' cy='" & 50 - LastSparkYValue & "' r='2' stroke='" & LineColour & "' stroke-width='2' fill='" & PointColour & "' />" &
+			        "</svg>"
+			RETURN SVGImageURL
+			```
+		lineageTag: f649ad21-b09b-4c24-acda-c27e3c24bccc
+
 	column _
 		formatString: 0
 		lineageTag: 9da794ab-3464-40aa-b68a-ece1073790fb

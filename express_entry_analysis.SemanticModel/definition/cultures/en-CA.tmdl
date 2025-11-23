@@ -1454,7 +1454,7 @@ cultureInfo en-CA
 			        }
 			      ]
 			    },
-			    "entity__measure.total_invitations_issued": {
+			    "entity__measure.total_invitations": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
@@ -1464,32 +1464,312 @@ cultureInfo en-CA
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total invitations issued": {
+			          "total invitations": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "aggregate invitation issued": {
+			          "invitations": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate invitation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "overall invitation issued": {
+			          "overall invitation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.582
 			          }
 			        },
 			        {
-			          "total solicitation issued": {
+			          "total solicitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "solicitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "total invite": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total offer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total request": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total summons": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total bidding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.invitations_PY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Invitations PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invitations PY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.lowest_CRS_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Lowest CRS Score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lowest CRS score": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "score": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CRS score": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "lowest crs notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "crs notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "crs slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "crs groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "crs nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.crs_py": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CRS PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "crs py": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.invitations_PY_gap": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Invitations PY Gap"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invitations PY gap": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PY gap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "invitation py cavity": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -1499,7 +1779,37 @@ cultureInfo en-CA
 			          }
 			        },
 			        {
-			          "total invite issued": {
+			          "invitation py aperture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "py cavity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "py aperture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invitation py hole": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -1509,7 +1819,7 @@ cultureInfo en-CA
 			          }
 			        },
 			        {
-			          "total offer issued": {
+			          "invitation py opening": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -1519,7 +1829,7 @@ cultureInfo en-CA
 			          }
 			        },
 			        {
-			          "total request issued": {
+			          "invitation py break": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -1529,7 +1839,7 @@ cultureInfo en-CA
 			          }
 			        },
 			        {
-			          "total summons issued": {
+			          "invitation py breach": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -1539,7 +1849,7 @@ cultureInfo en-CA
 			          }
 			        },
 			        {
-			          "total bidding issued": {
+			          "invitation py slit": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -1549,7 +1859,85 @@ cultureInfo en-CA
 			          }
 			        },
 			        {
-			          "total call issued": {
+			          "invitation py fissure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.CRS_PY_gap": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CRS PY Gap"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CRS PY gap": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PY gap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "crs py cavity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "crs py aperture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "py cavity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "py aperture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "crs py hole": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -1559,23 +1947,936 @@ cultureInfo en-CA
 			          }
 			        },
 			        {
-			          "total incitement issued": {
+			          "crs py opening": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.482
+			            "Weight": 0.492
 			          }
 			        },
 			        {
-			          "Invitations": {
+			          "crs py break": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "crs py breach": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "crs py slit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "crs py fissure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.invitations_PY_gap_with_arrow": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Invitations PY Gap with Arrow"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invitations PY gap with arrow": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PY gap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "invitation py cavity with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "invitation py aperture with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "invitation py hole with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "invitation py opening with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "invitation py break with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "invitation py breach with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "invitation py slit with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "invitation py fissure with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "invitation py crack with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "py cavity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.format_TTL_invitations": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Format TTL Invitations"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "format TTL invitations": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "invitations": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "TTL invitations": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "format ttl solicitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "ttl solicitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "format ttl invite": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "format ttl offer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "format ttl request": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "format ttl summons": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "format ttl bidding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "format ttl call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "solicitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ttl invite": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Invitations Issued": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
 			              "Agent": "PowerBI.VisualColumnRename"
 			            },
 			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total Invitations Issued": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "time_intelligence": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Time Intelligence"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time intelligence": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "intelligence": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "duration intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "time intellect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time acumen": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time aptitude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time astuteness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time cleverness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "time_intelligence.time_calculation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Time Intelligence",
+			          "ConceptualProperty": "Time Calculation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time calculation": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "calculation": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "duration calculation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval calculation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment calculation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period calculation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable calculation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "time intention": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time shrewdness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time deviousness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "intention": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "shrewdness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "time_intelligence.ordinal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Time Intelligence",
+			          "ConceptualProperty": "Ordinal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ordinal": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.format_MIN_CRS": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Format MIN CRS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "format MIN CRS": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CRS": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "MIN CRS": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "format minimum crs": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "minimum crs": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Lowest CRS Score": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.format_invitations_PY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Format Invitations PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "format invitations PY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.CRS_invite_ratio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CRS/Invite Ratio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CRS/invite ratio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CRS": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CRS invite ratio": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "invite ratio": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "crs/invite relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "crs/invite percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "crs/invite quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "crs/invite relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "crs invite relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "crs invite percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "crs invite quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "crs invite relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "invite relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invite percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.CRS_PY_gap_with_arrow": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CRS PY Gap with Arrow"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CRS PY gap with arrow": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PY gap": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "crs py cavity with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "crs py aperture with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "crs py hole with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "crs py opening with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "crs py break with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "crs py breach with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "crs py slit with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "crs py fissure with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "crs py crack with arrow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "py cavity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
 			          }
 			        }
 			      ]
@@ -1727,7 +3028,7 @@ cultureInfo en-CA
 			        }
 			      ]
 			    },
-			    "round_of_invitations_has_entity__measure_total_invitations_issued": {
+			    "round_of_invitations_has_entity__measure_CRS_PY_gap_with_arrow": {
 			      "Binding": {
 			        "ConceptualEntity": "Rounds of Invitations"
 			      },
@@ -1738,9 +3039,9 @@ cultureInfo en-CA
 			            "Entity": "round_of_invitations"
 			          }
 			        },
-			        "entity__measure.total_invitations_issued": {
+			        "entity__measure.CRS_PY_gap_with_arrow": {
 			          "Target": {
-			            "Entity": "entity__measure.total_invitations_issued"
+			            "Entity": "entity__measure.CRS_PY_gap_with_arrow"
 			          }
 			        }
 			      },
@@ -1751,12 +3052,441 @@ cultureInfo en-CA
 			              "Role": "round_of_invitations"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.total_invitations_issued"
+			              "Role": "entity__measure.CRS_PY_gap_with_arrow"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "round_of_invitations_have_total_invitations_issued"
+			          "ID": "round_of_invitations_have_CRS_PY_gap_with_arrow"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_CRS_invite_ratio": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.CRS_invite_ratio": {
+			          "Target": {
+			            "Entity": "entity__measure.CRS_invite_ratio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.CRS_invite_ratio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_CRS_invite_ratio"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_format_invitations_PY": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.format_invitations_PY": {
+			          "Target": {
+			            "Entity": "entity__measure.format_invitations_PY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.format_invitations_PY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_format_invitations_PY"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_format_MIN_CRS": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.format_MIN_CRS": {
+			          "Target": {
+			            "Entity": "entity__measure.format_MIN_CRS"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.format_MIN_CRS"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_format_MIN_CRS"
+			        }
+			      ]
+			    },
+			    "time_intelligence_has_ordinal": {
+			      "Binding": {
+			        "ConceptualEntity": "Time Intelligence"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "time_intelligence": {
+			          "Target": {
+			            "Entity": "time_intelligence"
+			          }
+			        },
+			        "time_intelligence.ordinal": {
+			          "Target": {
+			            "Entity": "time_intelligence.ordinal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "time_intelligence"
+			            },
+			            "Object": {
+			              "Role": "time_intelligence.ordinal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "time_intelligences_have_ordinals"
+			        }
+			      ]
+			    },
+			    "time_intelligence_has_time_calculation": {
+			      "Binding": {
+			        "ConceptualEntity": "Time Intelligence"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "time_intelligence": {
+			          "Target": {
+			            "Entity": "time_intelligence"
+			          }
+			        },
+			        "time_intelligence.time_calculation": {
+			          "Target": {
+			            "Entity": "time_intelligence.time_calculation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "time_intelligence"
+			            },
+			            "Object": {
+			              "Role": "time_intelligence.time_calculation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "time_intelligences_have_time_calculations"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_format_TTL_invitations": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.format_TTL_invitations": {
+			          "Target": {
+			            "Entity": "entity__measure.format_TTL_invitations"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.format_TTL_invitations"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_format_TTL_invitations"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_invitations_PY_gap_with_arrow": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.invitations_PY_gap_with_arrow": {
+			          "Target": {
+			            "Entity": "entity__measure.invitations_PY_gap_with_arrow"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.invitations_PY_gap_with_arrow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_invitations_PY_gap_with_arrow"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_CRS_PY_gap": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.CRS_PY_gap": {
+			          "Target": {
+			            "Entity": "entity__measure.CRS_PY_gap"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.CRS_PY_gap"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_CRS_PY_gap"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_invitations_PY_gap": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.invitations_PY_gap": {
+			          "Target": {
+			            "Entity": "entity__measure.invitations_PY_gap"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.invitations_PY_gap"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_invitations_PY_gap"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_crs_py": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.crs_py": {
+			          "Target": {
+			            "Entity": "entity__measure.crs_py"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.crs_py"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_crs_py"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_lowest_CRS_score": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.lowest_CRS_score": {
+			          "Target": {
+			            "Entity": "entity__measure.lowest_CRS_score"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.lowest_CRS_score"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_lowest_CRS_score"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_invitations_PY": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.invitations_PY": {
+			          "Target": {
+			            "Entity": "entity__measure.invitations_PY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.invitations_PY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_invitations_PY"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_entity__measure_total_invitations": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "entity__measure.total_invitations": {
+			          "Target": {
+			            "Entity": "entity__measure.total_invitations"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.total_invitations"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_total_invitations"
 			        }
 			      ]
 			    },

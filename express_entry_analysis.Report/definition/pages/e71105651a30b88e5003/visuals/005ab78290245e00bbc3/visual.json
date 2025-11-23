@@ -4,10 +4,10 @@
   "position": {
     "x": 10.158730158730158,
     "y": 175.74603174603175,
-    "z": 6,
+    "z": 5000,
     "height": 297.65079365079367,
     "width": 610.53968253968253,
-    "tabOrder": 6
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "ribbonChart",
@@ -778,61 +778,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "7cafae79363387c4570a",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Rounds of Invitations"
-                  }
-                },
-                "Property": "Invitations Issued"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "285140457dc2030ac89d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Rounds of Invitations"
-              }
-            },
-            "Property": "Round Type"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "854c03b93b80a4154804",
-        "field": {
-          "HierarchyLevel": {
-            "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Calendar"
-                  }
-                },
-                "Hierarchy": "Date Hierarchy"
-              }
-            },
-            "Level": "Year"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

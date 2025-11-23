@@ -5,6 +5,12 @@
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
+  "pageBinding": {
+    "name": "93a8b895e2355464bd72",
+    "type": "Default",
+    "parameters": [],
+    "referenceScope": "CrossReport"
+  },
   "visualInteractions": [
     {
       "source": "8e97c612e5b93a9044e0",

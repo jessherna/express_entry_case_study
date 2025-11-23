@@ -4,7 +4,7 @@
   "position": {
     "x": 122.2110552763819,
     "y": 237.9899497487437,
-    "z": 5000,
+    "z": 3000,
     "height": 481.49318018664746,
     "width": 1151.356783919598,
     "tabOrder": 3000
@@ -792,7 +792,7 @@
             "titleText": {
               "expr": {
                 "Literal": {
-                  "Value": "'vs Prev Year'"
+                  "Value": "'vs Last Year'"
                 }
               }
             },
@@ -840,7 +840,7 @@
             "titleText": {
               "expr": {
                 "Literal": {
-                  "Value": "'vs Prev Year'"
+                  "Value": "'vs Last Year'"
                 }
               }
             },
@@ -1117,7 +1117,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#2B9841'"
+                              "Value": "'#E15759'"
                             }
                           }
                         },
@@ -1144,7 +1144,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#D64550'"
+                              "Value": "'#59A14F'"
                             }
                           }
                         }

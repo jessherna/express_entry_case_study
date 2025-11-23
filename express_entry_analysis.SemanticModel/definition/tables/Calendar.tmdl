@@ -67,6 +67,13 @@ table Calendar
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Short Month' = LEFT('Calendar'[Month],3)
+		lineageTag: 58d1fdbc-214f-4242-b135-576fe3358aec
+		summarizeBy: none
+		sortByColumn: monthNumber
+
+		annotation SummarizationSetBy = Automatic
+
 	hierarchy 'Date Hierarchy'
 		lineageTag: 67ec4750-6fdd-46d9-9e8c-d82031f8be73
 

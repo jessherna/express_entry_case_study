@@ -4,10 +4,10 @@
   "position": {
     "x": 362.0387652548456,
     "y": 81.780330222541266,
-    "z": 7501,
+    "z": 7000,
     "height": 148.8585786073223,
     "width": 235.23330940416366,
-    "tabOrder": 6001
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Measures.Lowest CRS Score",
-              "nativeQueryRef": "Lowest CRS Score"
+              "nativeQueryRef": "Lowest CRS Score",
+              "displayName": "Lowest CRS Score"
             }
           ]
         }
@@ -380,6 +381,42 @@
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
           }
         }
       ]

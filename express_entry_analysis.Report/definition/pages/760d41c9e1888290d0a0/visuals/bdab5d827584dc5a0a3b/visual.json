@@ -4,7 +4,7 @@
   "position": {
     "x": 122.2110552763819,
     "y": 81.780330222541266,
-    "z": 6000,
+    "z": 4000,
     "height": 148.8585786073223,
     "width": 235.23330940416366,
     "tabOrder": 5000
@@ -409,6 +409,42 @@
           },
           "selector": {
             "id": "default"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
           }
         }
       ]

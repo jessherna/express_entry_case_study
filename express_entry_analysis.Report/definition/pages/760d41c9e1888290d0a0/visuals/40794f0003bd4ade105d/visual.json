@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "673120fe70465445a70c",
+  "name": "40794f0003bd4ade105d",
   "position": {
-    "x": 263.7185929648241,
-    "y": 7.49141559804621,
-    "z": 2000,
-    "height": 57.8894472361809,
-    "width": 567.86791098348885,
-    "tabOrder": 2000
+    "x": 0,
+    "y": 91.355252606255007,
+    "z": 10000,
+    "height": 37.979149959903765,
+    "width": 115.99037690457097,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,13 +19,15 @@
               {
                 "textRuns": [
                   {
-                    "value": "Express Entry Rounds of Invitations",
+                    "value": "MENU",
                     "textStyle": {
                       "fontFamily": "Segoe (Bold)",
-                      "fontSize": "24pt"
+                      "fontSize": "14pt",
+                      "color": "#ffffff"
                     }
                   }
-                ]
+                ],
+                "horizontalTextAlignment": "center"
               }
             ]
           }

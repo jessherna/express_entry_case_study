@@ -2880,6 +2880,50 @@ cultureInfo en-CA
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.invitations_sparkline": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Invitations Sparkline"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invitations sparkline": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sparkline": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.CRS_sparkline": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CRS Sparkline"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CRS sparkline": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sparkline": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -3025,6 +3069,72 @@ cultureInfo en-CA
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendars_have_round_of_invitations"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_CRS_sparkline": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.CRS_sparkline": {
+			          "Target": {
+			            "Entity": "entity__measure.CRS_sparkline"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.CRS_sparkline"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_CRS_sparkline"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_invitations_sparkline": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.invitations_sparkline": {
+			          "Target": {
+			            "Entity": "entity__measure.invitations_sparkline"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.invitations_sparkline"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_invitations_sparkline"
 			        }
 			      ]
 			    },

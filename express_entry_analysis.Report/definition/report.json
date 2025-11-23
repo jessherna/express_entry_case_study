@@ -68,6 +68,31 @@
           "name": "Tableau_Theme_Colours24187630096231227.json",
           "path": "Tableau_Theme_Colours24187630096231227.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "overview29542443685450426.svg",
+          "path": "overview29542443685450426.svg",
+          "type": "Image"
+        },
+        {
+          "name": "trend8719693433870329.svg",
+          "path": "trend8719693433870329.svg",
+          "type": "Image"
+        },
+        {
+          "name": "refresh9671031135692381.svg",
+          "path": "refresh9671031135692381.svg",
+          "type": "Image"
+        },
+        {
+          "name": "help44230447518228877.svg",
+          "path": "help44230447518228877.svg",
+          "type": "Image"
+        },
+        {
+          "name": "overview_insight8083970958939993.svg",
+          "path": "overview_insight8083970958939993.svg",
+          "type": "Image"
         }
       ]
     }

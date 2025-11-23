@@ -1,0 +1,49 @@
+table 'Measures 2'
+	lineageTag: 3da184c9-6f8f-431f-a053-7049a3e9ff42
+
+	column Measures
+		lineageTag: a5fbf2f5-54ad-46c2-b97d-cbf3ff52bd07
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Measures Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Measures Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Measures Fields'
+		isHidden
+		lineageTag: 466f1a70-dba3-42ca-908a-6984a30ed39e
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Measures Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Measures Order'
+		isHidden
+		formatString: 0
+		lineageTag: 7012fec9-6a8a-498b-b246-7a6cdad211df
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Measures 2' = calculated
+		mode: import
+		source =
+				{
+				    ("Total Invitations", NAMEOF('_Measures'[Total Invitations]), 0),
+				    ("Lowest CRS Score", NAMEOF('_Measures'[Lowest CRS Score]), 1),
+				    ("CRS/Invite Ratio", NAMEOF('_Measures'[CRS/Invite Ratio]), 2)
+				}
+
+	annotation PBI_Id = 7a0160e6511047dfb9cb32b837316547
+

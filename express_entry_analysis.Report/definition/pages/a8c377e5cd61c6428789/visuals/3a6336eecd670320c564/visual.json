@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "c425cb69d83ce3208b85",
+  "name": "3a6336eecd670320c564",
   "position": {
-    "x": 945.3728949478749,
-    "y": 10.264635124298316,
-    "z": 1000,
-    "height": 50.296712109061744,
-    "width": 170.39294306335205,
-    "tabOrder": 1000
+    "x": 849.91178829190051,
+    "y": 97.514033680834,
+    "z": 12003,
+    "height": 39.0056134723336,
+    "width": 430.08821170809944,
+    "tabOrder": 12003
   },
   "visual": {
     "visualType": "slicer",
@@ -17,22 +17,17 @@
           "projections": [
             {
               "field": {
-                "HierarchyLevel": {
+                "Column": {
                   "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Calendar"
-                        }
-                      },
-                      "Hierarchy": "Date Hierarchy"
+                    "SourceRef": {
+                      "Entity": "Measures 2"
                     }
                   },
-                  "Level": "Year"
+                  "Property": "Measures"
                 }
               },
-              "queryRef": "Calendar.Date Hierarchy.Year",
-              "nativeQueryRef": "Date Hierarchy Year",
+              "queryRef": "Measures 2.Measures",
+              "nativeQueryRef": "Measures",
               "active": true
             }
           ]
@@ -43,17 +38,10 @@
       "data": [
         {
           "properties": {
-            "numericStart": {
-              "expr": {
-                "Literal": {
-                  "Value": "2023D"
-                }
-              }
-            },
             "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dropdown'"
+                  "Value": "'Basic'"
                 }
               }
             }
@@ -75,8 +63,8 @@
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "c",
-                    "Entity": "Calendar",
+                    "Name": "m",
+                    "Entity": "Measures 2",
                     "Type": 0
                   }
                 ],
@@ -89,10 +77,10 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "c"
+                                  "Source": "m"
                                 }
                               },
-                              "Property": "Year"
+                              "Property": "Measures Fields"
                             }
                           }
                         ],
@@ -100,7 +88,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "2025L"
+                                "Value": "'''_Measures''[Total Invitations]'"
                               }
                             }
                           ]
@@ -111,18 +99,13 @@
                       "filterExpressionMetadata": {
                         "expressions": [
                           {
-                            "HierarchyLevel": {
+                            "Column": {
                               "Expression": {
-                                "Hierarchy": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "Calendar"
-                                    }
-                                  },
-                                  "Hierarchy": "Date Hierarchy"
+                                "SourceRef": {
+                                  "Entity": "Measures 2"
                                 }
                               },
-                              "Level": "Year"
+                              "Property": "Measures"
                             }
                           }
                         ],
@@ -133,7 +116,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "2025L"
+                                      "Value": "'''_Measures''[Total Invitations]'"
                                     }
                                   }
                                 ]
@@ -146,10 +129,10 @@
                                 "Column": {
                                   "Expression": {
                                     "SourceRef": {
-                                      "Entity": "Calendar"
+                                      "Entity": "Measures 2"
                                     }
                                   },
-                                  "Property": "Year"
+                                  "Property": "Measures Fields"
                                 }
                               }
                             }
@@ -157,7 +140,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "2025"
+                            "0": "Total Invitations"
                           }
                         ]
                       }
@@ -172,20 +155,6 @@
       "selection": [
         {
           "properties": {
-            "singleSelect": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "strictSingleSelect": {
               "expr": {
                 "Literal": {
@@ -199,27 +168,6 @@
       "header": [
         {
           "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Selected Year'"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
-                }
-              }
-            },
-            "textSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            },
             "show": {
               "expr": {
                 "Literal": {
@@ -229,45 +177,56 @@
             }
           }
         }
-      ],
-      "pendingChangesIcon": [
+      ]
+    },
+    "visualContainerObjects": {
+      "padding": [
         {
           "properties": {
-            "show": {
+            "top": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
           }
         }
       ],
-      "items": [
+      "title": [
         {
           "properties": {
-            "textSize": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'"
+                  "Value": "false"
                 }
               }
             }
           }
         }
       ]
-    },
-    "syncGroup": {
-      "groupName": "Year",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

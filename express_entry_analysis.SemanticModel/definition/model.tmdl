@@ -17,6 +17,7 @@ ref table 'Rounds of Invitations'
 ref table Calendar
 ref table _Measures
 ref table 'Time Intelligence'
+ref table 'Measures 2'
 
 ref cultureInfo en-CA
 

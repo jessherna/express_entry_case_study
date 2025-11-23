@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "express_entry_analysis"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1a2f2206-2ba5-4fae-9bb2-c28b0cf17025"
+  }
+}

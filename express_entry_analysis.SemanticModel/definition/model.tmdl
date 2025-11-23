@@ -1,0 +1,22 @@
+model Model
+	culture: en-CA
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-CA
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Rounds of Invitations"]
+
+annotation PBI_ProTooling = ["CalcGroup","DevMode"]
+
+ref table 'Rounds of Invitations'
+ref table Calendar
+ref table _Measures
+ref table 'Time Intelligence'
+
+ref cultureInfo en-CA
+

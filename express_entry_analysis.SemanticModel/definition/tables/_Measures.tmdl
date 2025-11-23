@@ -1,0 +1,45 @@
+table _Measures
+	lineageTag: 533e0e86-3cf0-446a-a7d9-5c50e0726983
+
+	measure 'Total Invitations' = SUM('Rounds of Invitations'[Invitations Issued])
+		formatString: #,0
+		lineageTag: c3484911-ffd9-4093-8c42-7e4950ad5be0
+
+	measure 'Invitations PY' = CALCULATE([Total Invitations], SAMEPERIODLASTYEAR('Calendar'[Date]))
+		formatString: #,0
+		lineageTag: 5f4979e5-20b2-4b20-8c24-97b6034d0a8d
+
+	measure 'Lowest CRS Score' = MIN('Rounds of Invitations'[Lowest CRS Score])
+		formatString: 0
+		lineageTag: 13c7cc37-3281-4bd5-8fd8-cf0de3f58c4c
+
+	measure 'CRS PY' = CALCULATE([Lowest CRS Score], SAMEPERIODLASTYEAR('Calendar'[Date]))
+		formatString: 0
+		lineageTag: 09f89c8b-ea88-4c3a-82cd-25cda6ebadc0
+
+	measure 'Invitations PY Gap' = ```
+			[Total Invitations] - [Invitations PY] 
+			```
+		formatString: 0
+		lineageTag: 2bf822bd-ae58-4048-b463-179924f1d13b
+
+	measure 'CRS PY Gap' = [Lowest CRS Score] - [CRS PY]
+		formatString: 0
+		lineageTag: c0a04d09-13ad-404b-a81f-1c289e8a4fed
+
+	column _
+		formatString: 0
+		lineageTag: 9da794ab-3464-40aa-b68a-ece1073790fb
+		summarizeBy: sum
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 6cb8952545b846699e706667a70e2de6
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

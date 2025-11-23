@@ -1,0 +1,82 @@
+table 'Rounds of Invitations'
+	lineageTag: 7f96bb9a-bf3f-4569-9314-34670f6376dd
+
+	column 'Draw Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 98636879-0482-46aa-9e79-da4b3bfad70f
+		summarizeBy: none
+		sourceColumn: Draw Number
+
+		annotation SummarizationSetBy = User
+
+	column 'Draw Number URL'
+		dataType: string
+		lineageTag: d518ae33-af59-4369-b286-7b2a444a8d8a
+		summarizeBy: none
+		sourceColumn: Draw Number URL
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1b26ae53-19db-4d37-859f-20516f790d4f
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Round Type'
+		dataType: string
+		lineageTag: 1d140440-9d11-46fd-923e-1bdfdc5aab2b
+		summarizeBy: none
+		sourceColumn: Round Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Invitations Issued'
+		dataType: int64
+		formatString: #,0
+		lineageTag: 47039ee6-675d-4ad6-bd9b-72ff6de87626
+		summarizeBy: none
+		sourceColumn: Invitations Issued
+
+		annotation SummarizationSetBy = User
+
+	column 'Lowest CRS Score'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b571cb8-d043-4aea-8794-224694431de4
+		summarizeBy: none
+		sourceColumn: Lowest CRS Score
+
+		annotation SummarizationSetBy = User
+
+	column Category
+		dataType: string
+		lineageTag: 36cdbbaa-6907-4da3-9911-915c0cdacede
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Rounds of Invitations' = m
+		mode: import
+		source =
+				let
+				    Source = Python.Execute("import requests#(lf)import json#(lf)import pandas as pd#(lf)#(lf)json_url = 'https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json'#(lf)response = requests.get(json_url)#(lf)json_data_string = response.text#(lf)#(lf)json_data_dict = json.loads(json_data_string)#(lf)df = pd.DataFrame(json_data_dict['rounds'])"),
+				    df1 = Source{[Name="df"]}[Value],
+				    #"Changed Type" = Table.TransformColumnTypes(df1,{{"drawNumber", Int64.Type}, {"drawNumberURL", type text}, {"drawDate", type date}, {"drawDateFull", type date}, {"drawName", type text}, {"drawSize", Int64.Type}, {"drawCRS", Int64.Type}, {"mitext", type text}, {"DrawText1", type text}, {"drawText2", type text}, {"drawDateTime", type text}, {"drawCutOff", type text}, {"drawDistributionAsOn", type date}, {"dd1", Int64.Type}, {"dd2", Int64.Type}, {"dd3", Int64.Type}, {"dd4", Int64.Type}, {"dd5", Int64.Type}, {"dd6", Int64.Type}, {"dd7", Int64.Type}, {"dd8", Int64.Type}, {"dd9", Int64.Type}, {"dd10", Int64.Type}, {"dd11", Int64.Type}, {"dd12", Int64.Type}, {"dd13", Int64.Type}, {"dd14", Int64.Type}, {"dd15", Int64.Type}, {"dd16", Int64.Type}, {"dd17", Int64.Type}, {"dd18", Int64.Type}}),
+				    #"Replaced Errors" = Table.ReplaceErrorValues(#"Changed Type", {{"drawNumber", 999}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Replaced Errors",{"drawNumber", "drawNumberURL", "drawDate", "drawName", "drawSize", "drawCRS", "drawText2"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"drawSize", "Invitations Issued"}, {"drawCRS", "Lowest CRS Score"}, {"drawDate", "Date"}, {"drawName", "Round Type"}, {"drawNumber", "Draw Number"}, {"drawNumberURL", "Draw Number URL"}, {"drawText2", "Category"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

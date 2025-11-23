@@ -1,0 +1,90 @@
+table Calendar
+	lineageTag: e4dac0ff-ea81-406c-9633-83ea33fd0f85
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: mmmm d\, yyyy
+		lineageTag: a12b46cc-1ba4-4c2f-a283-9957a84612da
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Year = YEAR('Calendar'[Date])
+		formatString: 0
+		lineageTag: 94bfaf88-c7b4-44b3-88c4-9611b5d5f08a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column monthNumber = MONTH('Calendar'[Date])
+		formatString: 0
+		lineageTag: 112ff14a-90cb-484d-9b80-28e338435f79
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month =
+			SWITCH (
+			         'Calendar'[monthNumber],
+			         1, "January",
+			         2, "February",
+			         3, "March",
+			         4, "April",
+			         5, "May",
+			         6, "June",
+			         7, "July",
+			         8, "August",
+			         9, "September",
+			         10, "October",
+			         11, "November",
+			         12, "December",
+			         "Unknown month number"
+			        )
+		lineageTag: 241146d6-1fe0-42a1-9035-6140396aa6de
+		summarizeBy: none
+		sortByColumn: monthNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column QText = QUARTER('Calendar'[Date])
+		dataType: string
+		lineageTag: beba1804-9255-4b77-aba4-096a562a9286
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter = "Q" & 'Calendar'[QText]
+		dataType: string
+		lineageTag: f0f91cef-bef2-4844-ae11-c8748a0b0c00
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Date Hierarchy'
+		lineageTag: 67ec4750-6fdd-46d9-9e8c-d82031f8be73
+
+		level Year
+			lineageTag: 7d4d2ea7-2ae8-4ad1-a722-99769cde84a3
+			column: Year
+
+		level monthNumber
+			lineageTag: a0696d53-5174-4c32-a383-a9680e154481
+			column: monthNumber
+
+		level Month
+			lineageTag: 5cae077f-afe4-4e09-bb70-8d7fb431a14d
+			column: Month
+
+	partition Calendar = calculated
+		mode: import
+		source = CALENDAR(MINX('Rounds of Invitations', 'Rounds of Invitations'[Date]), MAXX('Rounds of Invitations', 'Rounds of Invitations'[Date]))
+
+	annotation PBI_Id = f310dc93481044fa8308c552643808af
+

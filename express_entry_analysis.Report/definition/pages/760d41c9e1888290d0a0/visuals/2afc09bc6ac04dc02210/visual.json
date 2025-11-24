@@ -4,10 +4,10 @@
   "position": {
     "x": 1121.3445378151259,
     "y": 11.43060387848506,
-    "z": 10003,
+    "z": 13000,
     "height": 50.196078431372548,
     "width": 51.092436974789912,
-    "tabOrder": 12001
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "actionButton",
@@ -168,14 +168,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'PageNavigation'"
+                  "Value": "'WebUrl'"
                 }
               }
             },

@@ -10,17 +10,9 @@ table 'Rounds of Invitations'
 
 		annotation SummarizationSetBy = User
 
-	column 'Draw Number URL'
-		dataType: string
-		lineageTag: d518ae33-af59-4369-b286-7b2a444a8d8a
-		summarizeBy: none
-		sourceColumn: Draw Number URL
-
-		annotation SummarizationSetBy = Automatic
-
 	column Date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: mmmm d\, yyyy
 		lineageTag: 1b26ae53-19db-4d37-859f-20516f790d4f
 		summarizeBy: none
 		sourceColumn: Date
@@ -28,6 +20,8 @@ table 'Rounds of Invitations'
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column 'Round Type'
 		dataType: string
@@ -63,6 +57,15 @@ table 'Rounds of Invitations'
 
 		annotation SummarizationSetBy = Automatic
 
+	column URL
+		dataType: string
+		lineageTag: c59178ba-7084-46d0-b1a3-38c8bd3f81c9
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: URL
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Rounds of Invitations' = m
 		mode: import
 		source =
@@ -72,9 +75,18 @@ table 'Rounds of Invitations'
 				    #"Changed Type" = Table.TransformColumnTypes(df1,{{"drawNumber", Int64.Type}, {"drawNumberURL", type text}, {"drawDate", type date}, {"drawDateFull", type date}, {"drawName", type text}, {"drawSize", Int64.Type}, {"drawCRS", Int64.Type}, {"mitext", type text}, {"DrawText1", type text}, {"drawText2", type text}, {"drawDateTime", type text}, {"drawCutOff", type text}, {"drawDistributionAsOn", type date}, {"dd1", Int64.Type}, {"dd2", Int64.Type}, {"dd3", Int64.Type}, {"dd4", Int64.Type}, {"dd5", Int64.Type}, {"dd6", Int64.Type}, {"dd7", Int64.Type}, {"dd8", Int64.Type}, {"dd9", Int64.Type}, {"dd10", Int64.Type}, {"dd11", Int64.Type}, {"dd12", Int64.Type}, {"dd13", Int64.Type}, {"dd14", Int64.Type}, {"dd15", Int64.Type}, {"dd16", Int64.Type}, {"dd17", Int64.Type}, {"dd18", Int64.Type}}),
 				    #"Replaced Errors" = Table.ReplaceErrorValues(#"Changed Type", {{"drawNumber", 999}}),
 				    #"Removed Other Columns" = Table.SelectColumns(#"Replaced Errors",{"drawNumber", "drawNumberURL", "drawDate", "drawName", "drawSize", "drawCRS", "drawText2"}),
-				    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"drawSize", "Invitations Issued"}, {"drawCRS", "Lowest CRS Score"}, {"drawDate", "Date"}, {"drawName", "Round Type"}, {"drawNumber", "Draw Number"}, {"drawNumberURL", "Draw Number URL"}, {"drawText2", "Category"}})
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"drawSize", "Invitations Issued"}, {"drawCRS", "Lowest CRS Score"}, {"drawDate", "Date"}, {"drawName", "Round Type"}, {"drawNumber", "Draw Number"}, {"drawNumberURL", "Draw Number URL"}, {"drawText2", "Category"}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Renamed Columns", each [Draw Number] > 236),
+				    #"Filtered Rows1" = Table.SelectRows(#"Filtered Rows", each ([Draw Number] <> 999)),
+				    #"Replaced Value" = Table.ReplaceValue(#"Filtered Rows1","<a href='/content/canadasite","https://www.canada.ca",Replacer.ReplaceText,{"Draw Number URL"}),
+				    #"Split Column by Delimiter" = Table.SplitColumn(#"Replaced Value", "Draw Number URL", Splitter.SplitTextByDelimiter("'", QuoteStyle.Csv), {"Draw Number URL.1", "Draw Number URL.2", "Draw Number URL.3"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Split Column by Delimiter",{{"Draw Number URL.1", type text}, {"Draw Number URL.2", type text}, {"Draw Number URL.3", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type1",{"Draw Number URL.2", "Draw Number URL.3"}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns",{{"Draw Number URL.1", "URL"}}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Renamed Columns1","<a href=","https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=247",Replacer.ReplaceText,{"URL"}),
+				    #"Appended Query" = Table.Combine({#"Replaced Value1", #"Rounds of Invitations (2)"})
 				in
-				    #"Renamed Columns"
+				    #"Appended Query"
 
 	annotation PBI_NavigationStepName = Navigation
 

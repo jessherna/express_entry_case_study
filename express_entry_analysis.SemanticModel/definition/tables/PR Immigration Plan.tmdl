@@ -1,0 +1,93 @@
+table 'PR Immigration Plan'
+	lineageTag: c52b509f-3173-4eb7-a13d-b3f25ce9238c
+
+	column Category
+		dataType: string
+		lineageTag: 9b347479-88c8-4163-9b3b-1578e8314910
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubCategory
+		dataType: string
+		lineageTag: f9014e13-f858-41dd-b177-d50dac9c6d0f
+		summarizeBy: none
+		sourceColumn: SubCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: d23f5413-3e05-4c1b-b40a-1002373652b2
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Target
+		dataType: int64
+		formatString: 0
+		lineageTag: 0780e47a-8b61-447c-a2c8-5fcde9453893
+		summarizeBy: none
+		sourceColumn: Target
+
+		annotation SummarizationSetBy = User
+
+	partition 'PR Immigration Plan' = m
+		mode: import
+		source =
+				let
+				    Source = Python.Execute("import requests#(lf)import pandas as pd#(lf)from bs4 import BeautifulSoup#(lf)#(lf)url = ""https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/corporate-initiatives/levels/supplementary-immigration-levels-2026-2028.html""#(lf)#(lf)# Fetch the webpage content#(lf)response = requests.get(url)#(lf)response.raise_for_status() # Raise an HTTPError for bad responses (4xx or 5xx)#(lf)#(lf)# Parse the HTML content#(lf)soup = BeautifulSoup(response.text, 'html.parser')#(lf)#(lf)# Find the table directly by its ID#(lf)target_table = soup.find('table', id='pr')#(lf)#(lf)if target_table:#(lf)    # Convert the BeautifulSoup table object to a string for pandas.read_html#(lf)    table_html_string = str(target_table)#(lf)#(lf)    # Use pandas to read the HTML table into a list of DataFrames#(lf)    # Even if there's only one table, read_html returns a list#(lf)    tables = pd.read_html(table_html_string)#(lf)#(lf)    df_targets = tables[0]"),
+				    df_targets1 = Source{[Name="df_targets"]}[Value],
+				    #"Changed Type" = Table.TransformColumnTypes(df_targets1,{{"Unnamed: 0_level_0", type text}, {"Unnamed: 1_level_0", type text}, {"2026", type text}, {"2026_1", type text}, {"2026_2", type text}, {"2027", type text}, {"2027_3", type text}, {"2027_4", type text}, {"2028", type text}, {"2028_5", type text}, {"2028_6", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"2026_1", "2026_2", "2027_3", "2027_4", "2028_5", "2028_6"}),
+				    #"Filtered Rows" = Table.SelectRows(#"Removed Columns", each ([#"Unnamed: 1_level_0"] <> "Overall Planned Permanent Resident Admissions" and [#"Unnamed: 1_level_0"] <> "Total Economic" and [#"Unnamed: 1_level_0"] <> "Total Family" and [#"Unnamed: 1_level_0"] <> "Total Humanitarian & Compassionate and Other" and [#"Unnamed: 1_level_0"] <> "Total Refugees and Protected Persons")),
+				    #"Removed Top Rows" = Table.Skip(#"Filtered Rows",1),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Top Rows",{{"Unnamed: 0_level_0", "Category"}, {"Unnamed: 1_level_0", "SubCategory"}}),
+				    #"Filtered Rows1" = Table.SelectRows(#"Renamed Columns", each ([2026] <> "TBD")),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Filtered Rows1", "2026", "2026 - Copy"),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Duplicated Column",{"Category", "SubCategory", "2026", "2026 - Copy", "2027", "2028"}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Reordered Columns","footnote","(",Replacer.ReplaceText,{"SubCategory"}),
+				    #"Split Column by Delimiter" = Table.SplitColumn(#"Replaced Value", "SubCategory", Splitter.SplitTextByDelimiter("(", QuoteStyle.Csv), {"SubCategory.1", "SubCategory.2", "SubCategory.3"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Split Column by Delimiter",{{"SubCategory.1", type text}, {"SubCategory.2", type text}, {"SubCategory.3", type text}}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Changed Type1","Table","",Replacer.ReplaceText,{"SubCategory.1"}),
+				    #"Split Column by Delimiter1" = Table.SplitColumn(#"Replaced Value1", "SubCategory.1", Splitter.SplitTextByDelimiter(":", QuoteStyle.Csv), {"SubCategory.1.1", "SubCategory.1.2"}),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Split Column by Delimiter1",{{"SubCategory.1.1", type text}, {"SubCategory.1.2", type text}}),
+				    #"Removed Columns1" = Table.RemoveColumns(#"Changed Type2",{"SubCategory.1.2", "SubCategory.2", "SubCategory.3"}),
+				    #"Split Column by Delimiter2" = Table.SplitColumn(#"Removed Columns1", "2026 - Copy", Splitter.SplitTextByDelimiter("(", QuoteStyle.Csv), {"2026 - Copy.1", "2026 - Copy.2"}),
+				    #"Changed Type3" = Table.TransformColumnTypes(#"Split Column by Delimiter2",{{"2026 - Copy.1", type number}, {"2026 - Copy.2", type text}}),
+				    #"Split Column by Delimiter3" = Table.SplitColumn(#"Changed Type3", "2026 - Copy.2", Splitter.SplitTextByDelimiter(")", QuoteStyle.Csv), {"2026 - Copy.2.1", "2026 - Copy.2.2"}),
+				    #"Changed Type4" = Table.TransformColumnTypes(#"Split Column by Delimiter3",{{"2026 - Copy.2.1", Int64.Type}, {"2026 - Copy.2.2", type text}}),
+				    #"Removed Columns2" = Table.RemoveColumns(#"Changed Type4",{"2026 - Copy.1", "2026 - Copy.2.2"}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns2",{{"2026 - Copy.2.1", "2026_copy"}}),
+				    #"Added Custom1" = Table.AddColumn(#"Renamed Columns1", "_2026", each if [2026_copy] = null then [2026] else [2026_copy]),
+				    #"Changed Type5" = Table.TransformColumnTypes(#"Added Custom1",{{"_2026", Int64.Type}}),
+				    #"Removed Columns3" = Table.RemoveColumns(#"Changed Type5",{"2026", "2026_copy"}),
+				    #"Renamed Columns2" = Table.RenameColumns(#"Removed Columns3",{{"_2026", "2026"}, {"SubCategory.1.1", "SubCategory"}}),
+				    #"Split Column by Delimiter4" = Table.SplitColumn(#"Renamed Columns2", "2027", Splitter.SplitTextByDelimiter("(", QuoteStyle.Csv), {"2027.1", "2027.2"}),
+				    #"Changed Type6" = Table.TransformColumnTypes(#"Split Column by Delimiter4",{{"2027.1", type number}, {"2027.2", type text}}),
+				    #"Split Column by Delimiter5" = Table.SplitColumn(#"Changed Type6", "2027.2", Splitter.SplitTextByDelimiter(")", QuoteStyle.Csv), {"2027.2.1", "2027.2.2"}),
+				    #"Changed Type7" = Table.TransformColumnTypes(#"Split Column by Delimiter5",{{"2027.2.1", Int64.Type}, {"2027.2.2", type text}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type7", "2027", each if [2027.2.1] = null then [2027.1] else [2027.2.1]),
+				    #"Removed Columns4" = Table.RemoveColumns(#"Added Custom",{"2027.1", "2027.2.1", "2027.2.2"}),
+				    #"Changed Type8" = Table.TransformColumnTypes(#"Removed Columns4",{{"2027", Int64.Type}}),
+				    #"Split Column by Delimiter6" = Table.SplitColumn(#"Changed Type8", "2028", Splitter.SplitTextByDelimiter("(", QuoteStyle.Csv), {"2028.1", "2028.2"}),
+				    #"Changed Type9" = Table.TransformColumnTypes(#"Split Column by Delimiter6",{{"2028.1", type number}, {"2028.2", type text}}),
+				    #"Split Column by Delimiter7" = Table.SplitColumn(#"Changed Type9", "2028.2", Splitter.SplitTextByDelimiter(")", QuoteStyle.Csv), {"2028.2.1", "2028.2.2"}),
+				    #"Changed Type10" = Table.TransformColumnTypes(#"Split Column by Delimiter7",{{"2028.2.1", Int64.Type}, {"2028.2.2", type text}}),
+				    #"Added Custom2" = Table.AddColumn(#"Changed Type10", "2028", each if [2028.2.1] = null then [2028.1] else [2028.2.1]),
+				    #"Changed Type11" = Table.TransformColumnTypes(#"Added Custom2",{{"2028", Int64.Type}}),
+				    #"Removed Columns5" = Table.RemoveColumns(#"Changed Type11",{"2028.1", "2028.2.1", "2028.2.2"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Removed Columns5","Table footnote 4","",Replacer.ReplaceText,{"Category"}),
+				    #"Unpivoted Other Columns" = Table.UnpivotOtherColumns(#"Replaced Value2", {"Category", "SubCategory"}, "Attribute", "Value"),
+				    #"Renamed Columns3" = Table.RenameColumns(#"Unpivoted Other Columns",{{"Attribute", "Year"}, {"Value", "Target"}}),
+				    #"Changed Type12" = Table.TransformColumnTypes(#"Renamed Columns3",{{"Year", Int64.Type}})
+				in
+				    #"Changed Type12"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

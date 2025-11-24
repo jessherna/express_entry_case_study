@@ -156,133 +156,15 @@ cultureInfo en-CA
 			            },
 			            "Weight": 0.727
 			          }
-			        }
-			      ]
-			    },
-			    "round_of_invitations.draw_number_URL": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Rounds of Invitations",
-			          "ConceptualProperty": "Draw Number URL"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "draw number URL": {
-			            "State": "Generated"
-			          }
 			        },
 			        {
-			          "URL": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "number URL": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "draw number website": {
-			            "Type": "Noun",
+			          "Draw #": {
 			            "State": "Suggested",
 			            "Source": {
-			              "Agent": "Thesaurus"
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
 			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "number website": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "draw number site": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "website": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "number site": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "site": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "draw number web address": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.604
-			          }
-			        },
-			        {
-			          "draw no url": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "number web address": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.589
-			          }
-			        },
-			        {
-			          "no url": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -559,6 +441,16 @@ cultureInfo en-CA
 			            },
 			            "Weight": 0.475
 			          }
+			        },
+			        {
+			          "Invitations issued": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -686,6 +578,16 @@ cultureInfo en-CA
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "CRS score of lowest-ranking candidate invited": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1211,16 +1113,6 @@ cultureInfo en-CA
 			        },
 			        {
 			          "grading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "order": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -2274,265 +2166,6 @@ cultureInfo en-CA
 			        }
 			      ]
 			    },
-			    "time_intelligence": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Time Intelligence"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "time intelligence": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "intelligence": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "duration intelligence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "interval intelligence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "moment intelligence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period intelligence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "timetable intelligence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "time intellect": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "time acumen": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "time aptitude": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "time astuteness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "time cleverness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        }
-			      ]
-			    },
-			    "time_intelligence.time_calculation": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Time Intelligence",
-			          "ConceptualProperty": "Time Calculation"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "time calculation": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "calculation": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "duration calculation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "interval calculation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "moment calculation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "period calculation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "timetable calculation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "time intention": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "time shrewdness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "time deviousness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "intention": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "shrewdness": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        }
-			      ]
-			    },
-			    "time_intelligence.ordinal": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Time Intelligence",
-			          "ConceptualProperty": "Ordinal"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "ordinal": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "entity__measure.format_MIN_CRS": {
 			      "Definition": {
 			        "Binding": {
@@ -2924,23 +2557,1807 @@ cultureInfo en-CA
 			          }
 			        }
 			      ]
+			    },
+			    "calendar.short_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Short Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "short month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "short mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.sum_target": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Sum Target"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sum target": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sum focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sum goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sum objective": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "summation target": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "aggregation target": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "total target": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "aggregate target": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "amount target": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Target": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "measures_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures 2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "measures 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "measure 2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "measures_2.measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures 2",
+			          "ConceptualProperty": "Measures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measures_2.measures_field": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures 2",
+			          "ConceptualProperty": "Measures Fields"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "measures field": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "measure field": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "field": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "measure arena": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "arena": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "measure turf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure ground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure pitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure park": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "turf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "park": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "measures_2.measures_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Measures 2",
+			          "ConceptualProperty": "Measures Order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "measures order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "measure order": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "measure instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "measure direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "measure edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "measure command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "measure mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PR Immigration Plan"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "PR immigration plan": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "plan": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "immigration plan": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pr immigration proposal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pr immigration strategy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pr immigration agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pr immigration arrangement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pr immigration idea": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pr immigration layout": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pr immigration policy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "pr immigration preparation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "immigration proposal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "immigration strategy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan.category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PR Immigration Plan",
+			          "ConceptualProperty": "Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan.sub_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PR Immigration Plan",
+			          "ConceptualProperty": "SubCategory"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sub category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SubCategory": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sub classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sub class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sub group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sub type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sub grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "sub kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PR Immigration Plan",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "PR_immigration_plan.target": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PR Immigration Plan",
+			          "ConceptualProperty": "Target"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "target": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "objective": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.average_target": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Average Target"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average target": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "average goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "average objective": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.median_target": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Median Target"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "median target": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "median focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "median goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "median objective": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "round_of_invitations.url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations",
+			          "ConceptualProperty": "URL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "round of invitations (2)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "round of invitation (2)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2.draw_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "ConceptualProperty": "Draw Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "draw number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "draw no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2.url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "ConceptualProperty": "URL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "round_of_invitations_2.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "round_of_invitations_2.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "round_of_invitations_2.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "round_of_invitations_2.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "round_of_invitations_2.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "round_of_invitations_2.round_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "ConceptualProperty": "Round Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "round type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "type": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "round category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "round genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "round manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "round variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "round brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "round class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "round kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2.invitation_issued": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "ConceptualProperty": "Invitations Issued"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invitation issued": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "solicitation issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invite issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "offer issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "request issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "summons issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "bidding issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "call issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "incitement issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "encouragement issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "enticement issued": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2.lowest_CRS_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "ConceptualProperty": "Lowest CRS Score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lowest CRS score": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "score": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CRS score": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "lowest crs notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "lowest crs mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "crs notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "crs slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "crs groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "crs nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2.category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Rounds of Invitations (2)",
+			          "ConceptualProperty": "Category"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "calendar_date_hierarchy_has_month": {
+			    "round_of_invitations_2_has_round_type": {
 			      "Binding": {
-			        "ConceptualEntity": "Calendar"
+			        "ConceptualEntity": "Rounds of Invitations (2)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "calendar.date_hierarchy": {
+			        "round_of_invitations_2": {
 			          "Target": {
-			            "Entity": "calendar.date_hierarchy"
+			            "Entity": "round_of_invitations_2"
 			          }
 			        },
-			        "calendar.date_hierarchy.month": {
+			        "round_of_invitations_2.round_type": {
 			          "Target": {
-			            "Entity": "calendar.date_hierarchy.month"
+			            "Entity": "round_of_invitations_2.round_type"
 			          }
 			        }
 			      },
@@ -2948,32 +4365,52 @@ cultureInfo en-CA
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "calendar.date_hierarchy"
+			              "Role": "round_of_invitations_2"
 			            },
 			            "Object": {
-			              "Role": "calendar.date_hierarchy.month"
+			              "Role": "round_of_invitations_2.round_type"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
+			          "ID": "round_of_invitations_2_have_round_type"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2"
+			            },
+			            "Prepositions": [
+			              {
+			                "round": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "round_of_invitations_2.round_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_2_are_round_round_type"
 			        }
 			      ]
 			    },
-			    "calendar_date_hierarchy_has_month_number": {
+			    "round_of_invitations_2_has_date": {
 			      "Binding": {
-			        "ConceptualEntity": "Calendar"
+			        "ConceptualEntity": "Rounds of Invitations (2)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "calendar.date_hierarchy": {
+			        "round_of_invitations_2": {
 			          "Target": {
-			            "Entity": "calendar.date_hierarchy"
+			            "Entity": "round_of_invitations_2"
 			          }
 			        },
-			        "calendar.date_hierarchy.month_number": {
+			        "round_of_invitations_2.date": {
 			          "Target": {
-			            "Entity": "calendar.date_hierarchy.month_number"
+			            "Entity": "round_of_invitations_2.date"
 			          }
 			        }
 			      },
@@ -2981,32 +4418,32 @@ cultureInfo en-CA
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "calendar.date_hierarchy"
+			              "Role": "round_of_invitations_2"
 			            },
 			            "Object": {
-			              "Role": "calendar.date_hierarchy.month_number"
+			              "Role": "round_of_invitations_2.date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_month_numbers"
+			          "ID": "round_of_invitations_2_have_dates"
 			        }
 			      ]
 			    },
-			    "calendar_date_hierarchy_has_year": {
+			    "round_of_invitations_2_has_url": {
 			      "Binding": {
-			        "ConceptualEntity": "Calendar"
+			        "ConceptualEntity": "Rounds of Invitations (2)"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "calendar.date_hierarchy": {
+			        "round_of_invitations_2": {
 			          "Target": {
-			            "Entity": "calendar.date_hierarchy"
+			            "Entity": "round_of_invitations_2"
 			          }
 			        },
-			        "calendar.date_hierarchy.year": {
+			        "round_of_invitations_2.url": {
 			          "Target": {
-			            "Entity": "calendar.date_hierarchy.year"
+			            "Entity": "round_of_invitations_2.url"
 			          }
 			        }
 			      },
@@ -3014,19 +4451,52 @@ cultureInfo en-CA
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "calendar.date_hierarchy"
+			              "Role": "round_of_invitations_2"
 			            },
 			            "Object": {
-			              "Role": "calendar.date_hierarchy.year"
+			              "Role": "round_of_invitations_2.url"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
+			          "ID": "round_of_invitations_2_have_urls"
 			        }
 			      ]
 			    },
-			    "round_of_invitations_has_calendar": {
+			    "round_of_invitations_2_has_draw_number": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2"
+			          }
+			        },
+			        "round_of_invitations_2.draw_number": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.draw_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.draw_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_2_have_draw_numbers"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_url": {
 			      "Binding": {
 			        "ConceptualEntity": "Rounds of Invitations"
 			      },
@@ -3037,9 +4507,9 @@ cultureInfo en-CA
 			            "Entity": "round_of_invitations"
 			          }
 			        },
-			        "calendar": {
+			        "round_of_invitations.url": {
 			          "Target": {
-			            "Entity": "calendar"
+			            "Entity": "round_of_invitations.url"
 			          }
 			        }
 			      },
@@ -3050,25 +4520,309 @@ cultureInfo en-CA
 			              "Role": "round_of_invitations"
 			            },
 			            "Object": {
-			              "Role": "calendar"
+			              "Role": "round_of_invitations.url"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "round_of_invitations_have_calendars"
+			          "ID": "round_of_invitations_have_urls"
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan_has_entity__measure_median_target": {
+			      "Binding": {
+			        "ConceptualEntity": "PR Immigration Plan"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "PR_immigration_plan": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan"
+			          }
 			        },
+			        "entity__measure.median_target": {
+			          "Target": {
+			            "Entity": "entity__measure.median_target"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "PR_immigration_plan"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.median_target"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PR_immigration_plans_have_median_target"
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan_has_entity__measure_average_target": {
+			      "Binding": {
+			        "ConceptualEntity": "PR Immigration Plan"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "PR_immigration_plan": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan"
+			          }
+			        },
+			        "entity__measure.average_target": {
+			          "Target": {
+			            "Entity": "entity__measure.average_target"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "PR_immigration_plan"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_target"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PR_immigration_plans_have_average_target"
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan_has_target": {
+			      "Binding": {
+			        "ConceptualEntity": "PR Immigration Plan"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "PR_immigration_plan": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan"
+			          }
+			        },
+			        "PR_immigration_plan.target": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan.target"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "PR_immigration_plan"
+			            },
+			            "Object": {
+			              "Role": "PR_immigration_plan.target"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PR_immigration_plans_have_targets"
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "PR Immigration Plan"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "PR_immigration_plan": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan"
+			          }
+			        },
+			        "PR_immigration_plan.year": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "PR_immigration_plan"
+			            },
+			            "Object": {
+			              "Role": "PR_immigration_plan.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PR_immigration_plans_have_years"
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan_has_sub_category": {
+			      "Binding": {
+			        "ConceptualEntity": "PR Immigration Plan"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "PR_immigration_plan": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan"
+			          }
+			        },
+			        "PR_immigration_plan.sub_category": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan.sub_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "PR_immigration_plan"
+			            },
+			            "Object": {
+			              "Role": "PR_immigration_plan.sub_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PR_immigration_plans_have_sub_categories"
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "PR Immigration Plan"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "PR_immigration_plan": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan"
+			          }
+			        },
+			        "PR_immigration_plan.category": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "PR_immigration_plan"
+			            },
+			            "Object": {
+			              "Role": "PR_immigration_plan.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PR_immigration_plans_have_categories"
+			        }
+			      ]
+			    },
+			    "measures_2_has_measure": {
+			      "Binding": {
+			        "ConceptualEntity": "Measures 2"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "measures_2": {
+			          "Target": {
+			            "Entity": "measures_2"
+			          }
+			        },
+			        "measures_2.measure": {
+			          "Target": {
+			            "Entity": "measures_2.measure"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "measures_2"
+			            },
+			            "Object": {
+			              "Role": "measures_2.measure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "measures_2_have_measures"
+			        }
+			      ]
+			    },
+			    "PR_immigration_plan_has_entity__measure_sum_target": {
+			      "Binding": {
+			        "ConceptualEntity": "PR Immigration Plan"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "PR_immigration_plan": {
+			          "Target": {
+			            "Entity": "PR_immigration_plan"
+			          }
+			        },
+			        "entity__measure.sum_target": {
+			          "Target": {
+			            "Entity": "entity__measure.sum_target"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "PR_immigration_plan"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.sum_target"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "PR_immigration_plans_have_sum_target"
+			        }
+			      ]
+			    },
+			    "calendar_has_short_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.short_month": {
+			          "Target": {
+			            "Entity": "calendar.short_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "calendar"
 			            },
 			            "Object": {
-			              "Role": "round_of_invitations"
+			              "Role": "calendar.short_month"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "calendars_have_round_of_invitations"
+			          "ID": "calendars_have_short_months"
 			        }
 			      ]
 			    },
@@ -3267,72 +5021,6 @@ cultureInfo en-CA
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "round_of_invitations_have_format_MIN_CRS"
-			        }
-			      ]
-			    },
-			    "time_intelligence_has_ordinal": {
-			      "Binding": {
-			        "ConceptualEntity": "Time Intelligence"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "time_intelligence": {
-			          "Target": {
-			            "Entity": "time_intelligence"
-			          }
-			        },
-			        "time_intelligence.ordinal": {
-			          "Target": {
-			            "Entity": "time_intelligence.ordinal"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "time_intelligence"
-			            },
-			            "Object": {
-			              "Role": "time_intelligence.ordinal"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "time_intelligences_have_ordinals"
-			        }
-			      ]
-			    },
-			    "time_intelligence_has_time_calculation": {
-			      "Binding": {
-			        "ConceptualEntity": "Time Intelligence"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "time_intelligence": {
-			          "Target": {
-			            "Entity": "time_intelligence"
-			          }
-			        },
-			        "time_intelligence.time_calculation": {
-			          "Target": {
-			            "Entity": "time_intelligence.time_calculation"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "time_intelligence"
-			            },
-			            "Object": {
-			              "Role": "time_intelligence.time_calculation"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "time_intelligences_have_time_calculations"
 			        }
 			      ]
 			    },
@@ -4049,39 +5737,6 @@ cultureInfo en-CA
 			        }
 			      ]
 			    },
-			    "round_of_invitations_has_draw_number_URL": {
-			      "Binding": {
-			        "ConceptualEntity": "Rounds of Invitations"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "round_of_invitations": {
-			          "Target": {
-			            "Entity": "round_of_invitations"
-			          }
-			        },
-			        "round_of_invitations.draw_number_URL": {
-			          "Target": {
-			            "Entity": "round_of_invitations.draw_number_URL"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "round_of_invitations"
-			            },
-			            "Object": {
-			              "Role": "round_of_invitations.draw_number_URL"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "round_of_invitations_have_draw_number_URLs"
-			        }
-			      ]
-			    },
 			    "round_of_invitations_has_draw_number": {
 			      "Binding": {
 			        "ConceptualEntity": "Rounds of Invitations"
@@ -4112,6 +5767,415 @@ cultureInfo en-CA
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "round_of_invitations_have_draw_numbers"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2_has_invitation_issued": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2"
+			          }
+			        },
+			        "round_of_invitations_2.invitation_issued": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.invitation_issued"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.invitation_issued"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_2_have_invitation_issued"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2_has_lowest_CRS_score": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2"
+			          }
+			        },
+			        "round_of_invitations_2.lowest_CRS_score": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.lowest_CRS_score"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.lowest_CRS_score"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_2_have_lowest_CRS_scores"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2"
+			          }
+			        },
+			        "round_of_invitations_2.category": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_2_have_categories"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_has_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations": {
+			          "Target": {
+			            "Entity": "round_of_invitations"
+			          }
+			        },
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations"
+			            },
+			            "Object": {
+			              "Role": "calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "round_of_invitations_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_round_of_invitations"
+			        }
+			      ]
+			    },
+			    "calendar_date_hierarchy_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date_hierarchy"
+			          }
+			        },
+			        "calendar.date_hierarchy.year": {
+			          "Target": {
+			            "Entity": "calendar.date_hierarchy.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date_hierarchy.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendar_date_hierarchy_has_month_number": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date_hierarchy"
+			          }
+			        },
+			        "calendar.date_hierarchy.month_number": {
+			          "Target": {
+			            "Entity": "calendar.date_hierarchy.month_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date_hierarchy.month_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_month_numbers"
+			        }
+			      ]
+			    },
+			    "calendar_date_hierarchy_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date_hierarchy"
+			          }
+			        },
+			        "calendar.date_hierarchy.month": {
+			          "Target": {
+			            "Entity": "calendar.date_hierarchy.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date_hierarchy.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2.date": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date"
+			          }
+			        },
+			        "round_of_invitations_2.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2.date"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2_date_date_hierarchy_has_round_of_invitations_2_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.date_hierarchy"
+			          }
+			        },
+			        "round_of_invitations_2.date.year": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years1"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2_date_date_hierarchy_has_round_of_invitations_2_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.date_hierarchy"
+			          }
+			        },
+			        "round_of_invitations_2.date.quarter": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2_date_date_hierarchy_has_round_of_invitations_2_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.date_hierarchy"
+			          }
+			        },
+			        "round_of_invitations_2.date.month": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months1"
+			        }
+			      ]
+			    },
+			    "round_of_invitations_2_date_date_hierarchy_has_round_of_invitations_2_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Rounds of Invitations (2)"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "round_of_invitations_2.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.date_hierarchy"
+			          }
+			        },
+			        "round_of_invitations_2.date.day": {
+			          "Target": {
+			            "Entity": "round_of_invitations_2.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "round_of_invitations_2.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "round_of_invitations_2.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
 			        }
 			      ]
 			    }

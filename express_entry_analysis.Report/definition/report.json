@@ -93,6 +93,16 @@
           "name": "overview_insight8083970958939993.svg",
           "path": "overview_insight8083970958939993.svg",
           "type": "Image"
+        },
+        {
+          "name": "details9478916452475528.svg",
+          "path": "details9478916452475528.svg",
+          "type": "Image"
+        },
+        {
+          "name": "ircc2743146533234926.svg",
+          "path": "ircc2743146533234926.svg",
+          "type": "Image"
         }
       ]
     }
@@ -103,6 +113,7 @@
     "defaultDrillFilterOtherVisuals": true,
     "allowChangeFilterTypes": true,
     "useEnhancedTooltips": true,
+    "filterPaneHiddenInEditMode": true,
     "useDefaultAggregateDisplayName": true
   }
 }

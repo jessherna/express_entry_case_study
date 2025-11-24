@@ -4,10 +4,10 @@
   "position": {
     "x": 128.30793905372894,
     "y": 150.89013632718525,
-    "z": 12002,
+    "z": 10000,
     "height": 567.63432237369682,
     "width": 1137.3215717722535,
-    "tabOrder": 12002
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -300,14 +300,28 @@
             "showGradientLegend": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "show": {
               "expr": {
                 "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TopCenter'"
                 }
               }
             }
@@ -344,37 +358,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "471237493cae0d9e5031",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendar"
-              }
-            },
-            "Property": "Short Month"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c436dc29dea91e15e3a3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Rounds of Invitations"
-              }
-            },
-            "Property": "Round Type"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

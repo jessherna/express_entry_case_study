@@ -178,6 +178,20 @@ table _Measures
 			```
 		lineageTag: f649ad21-b09b-4c24-acda-c27e3c24bccc
 
+	measure 'Sum Target' = SUMX('PR Immigration Plan', 'PR Immigration Plan'[Target])
+		formatString: #,0
+		lineageTag: 100086e3-b363-4270-b1a1-d71c153fb3d7
+
+	measure 'Average Target' = AVERAGE('PR Immigration Plan'[Target])
+		lineageTag: 1c2d00ea-9c47-401b-821f-b906a73bd044
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Median Target' = MEDIAN('PR Immigration Plan'[Target])
+		lineageTag: ab2287fb-d6d6-4915-8090-d09b94a46a8f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column _
 		formatString: 0
 		lineageTag: 9da794ab-3464-40aa-b68a-ece1073790fb

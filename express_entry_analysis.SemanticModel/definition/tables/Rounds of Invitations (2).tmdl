@@ -1,0 +1,93 @@
+table 'Rounds of Invitations (2)'
+	lineageTag: ae0ae54f-bd8c-4be7-b41a-92470f098444
+
+	column 'Draw Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 00d75360-7306-446d-adc0-7118347e041c
+		summarizeBy: sum
+		sourceColumn: Draw Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column URL
+		dataType: string
+		lineageTag: 3a679b9a-1339-40bd-ae10-0e529836c9db
+		summarizeBy: none
+		sourceColumn: URL
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d15c48e8-c76b-441a-982c-93ace7390e1a
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: d377db29-6f58-4ec9-9aa0-2bf2b1dbcbf7
+			defaultHierarchy: LocalDateTable_a616e89b-6594-4a3f-9565-2d2284d2e014.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Round Type'
+		dataType: string
+		lineageTag: 99b092d1-9ef9-4e08-a718-f1ef7b86f84f
+		summarizeBy: none
+		sourceColumn: Round Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Invitations Issued'
+		dataType: int64
+		formatString: 0
+		lineageTag: dace2a88-d263-43ce-80c1-98e651109c18
+		summarizeBy: sum
+		sourceColumn: Invitations Issued
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lowest CRS Score'
+		dataType: int64
+		formatString: 0
+		lineageTag: c8925501-f6e7-4bdb-8424-d93ca779f466
+		summarizeBy: sum
+		sourceColumn: Lowest CRS Score
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 3091e3bb-fff1-4fa1-9adb-134e739d3929
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Rounds of Invitations (2)' = m
+		mode: import
+		source =
+				let
+				    Source = Python.Execute("import requests#(lf)import json#(lf)import pandas as pd#(lf)#(lf)json_url = 'https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json'#(lf)response = requests.get(json_url)#(lf)json_data_string = response.text#(lf)#(lf)json_data_dict = json.loads(json_data_string)#(lf)df = pd.DataFrame(json_data_dict['rounds'])"),
+				    df1 = Source{[Name="df"]}[Value],
+				    #"Changed Type" = Table.TransformColumnTypes(df1,{{"drawNumber", Int64.Type}, {"drawNumberURL", type text}, {"drawDate", type date}, {"drawDateFull", type date}, {"drawName", type text}, {"drawSize", Int64.Type}, {"drawCRS", Int64.Type}, {"mitext", type text}, {"DrawText1", type text}, {"drawText2", type text}, {"drawDateTime", type text}, {"drawCutOff", type text}, {"drawDistributionAsOn", type date}, {"dd1", Int64.Type}, {"dd2", Int64.Type}, {"dd3", Int64.Type}, {"dd4", Int64.Type}, {"dd5", Int64.Type}, {"dd6", Int64.Type}, {"dd7", Int64.Type}, {"dd8", Int64.Type}, {"dd9", Int64.Type}, {"dd10", Int64.Type}, {"dd11", Int64.Type}, {"dd12", Int64.Type}, {"dd13", Int64.Type}, {"dd14", Int64.Type}, {"dd15", Int64.Type}, {"dd16", Int64.Type}, {"dd17", Int64.Type}, {"dd18", Int64.Type}}),
+				    #"Replaced Errors" = Table.ReplaceErrorValues(#"Changed Type", {{"drawNumber", 999}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Replaced Errors",{"drawNumber", "drawNumberURL", "drawDate", "drawName", "drawSize", "drawCRS", "drawText2"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"drawSize", "Invitations Issued"}, {"drawCRS", "Lowest CRS Score"}, {"drawDate", "Date"}, {"drawName", "Round Type"}, {"drawNumber", "Draw Number"}, {"drawNumberURL", "Draw Number URL"}, {"drawText2", "Category"}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Renamed Columns", each [Draw Number] < 237),
+				    #"Replaced Value" = Table.ReplaceValue(#"Filtered Rows","<a href='","https://www.canada.ca",Replacer.ReplaceText,{"Draw Number URL"}),
+				    #"Split Column by Delimiter" = Table.SplitColumn(#"Replaced Value", "Draw Number URL", Splitter.SplitTextByDelimiter("'", QuoteStyle.Csv), {"Draw Number URL.1", "Draw Number URL.2"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Split Column by Delimiter",{{"Draw Number URL.1", type text}, {"Draw Number URL.2", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type1",{"Draw Number URL.2"}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns",{{"Draw Number URL.1", "URL"}})
+				in
+				    #"Renamed Columns1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

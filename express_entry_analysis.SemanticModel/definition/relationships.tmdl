@@ -2,3 +2,8 @@ relationship c1e6aace-7005-5c1c-cd66-d6fd8526ab3a
 	fromColumn: 'Rounds of Invitations'.Date
 	toColumn: Calendar.Date
 
+relationship d377db29-6f58-4ec9-9aa0-2bf2b1dbcbf7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Rounds of Invitations (2)'.Date
+	toColumn: LocalDateTable_a616e89b-6594-4a3f-9565-2d2284d2e014.Date
+

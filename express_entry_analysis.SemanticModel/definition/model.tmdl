@@ -9,15 +9,18 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["Rounds of Invitations"]
+annotation PBI_QueryOrder = ["Rounds of Invitations","PR Immigration Plan","Rounds of Invitations (2)"]
 
 annotation PBI_ProTooling = ["CalcGroup","DevMode"]
 
 ref table 'Rounds of Invitations'
 ref table Calendar
 ref table _Measures
-ref table 'Time Intelligence'
 ref table 'Measures 2'
+ref table 'PR Immigration Plan'
+ref table 'Rounds of Invitations (2)'
+ref table DateTableTemplate_00034162-99bf-4603-8623-6ac455affea3
+ref table LocalDateTable_a616e89b-6594-4a3f-9565-2d2284d2e014
 
 ref cultureInfo en-CA
 

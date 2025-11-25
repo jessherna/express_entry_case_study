@@ -188,18 +188,6 @@
               "objects": {}
             }
           },
-          "db72768e44da09050917": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "c141523e2c8e0d74220d": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
           "850cdd9e70082ced8589": {
             "singleVisual": {
               "visualType": "textbox",
@@ -337,18 +325,6 @@
                   }
                 }
               ]
-            }
-          },
-          "292cc660545d04005027": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "6c9768b0c001887607e4": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
             }
           }
         }

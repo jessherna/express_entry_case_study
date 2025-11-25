@@ -4,10 +4,10 @@
   "position": {
     "x": 128.30793905372894,
     "y": 150.89013632718525,
-    "z": 10000,
+    "z": 8000,
     "height": 567.63432237369682,
     "width": 1137.3215717722535,
-    "tabOrder": 10000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -60,12 +60,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Total Invitations"
+                  "Property": "Lowest CRS Score"
                 }
               },
-              "queryRef": "_Measures.Total Invitations",
-              "nativeQueryRef": "Total Invitations",
-              "displayName": "Total Invitations"
+              "queryRef": "_Measures.Lowest CRS Score",
+              "nativeQueryRef": "Lowest CRS Score",
+              "displayName": "Lowest CRS Score"
             }
           ],
           "fieldParameters": [

@@ -339,6 +339,13 @@
                   "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
                 }
               }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -430,7 +437,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "57D"
+                  "Value": "69.41858185507004D"
                 }
               }
             }
@@ -467,7 +474,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "57D"
+                  "Value": "72.07967789182135D"
                 }
               }
             }
@@ -504,7 +511,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "57D"
+                  "Value": "72.96671776781083D"
                 }
               }
             }
@@ -555,7 +562,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "442D"
+                  "Value": "417.16285577131663D"
                 }
               }
             }
@@ -657,6 +664,19 @@
         }
       ],
       "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
         {
           "properties": {
             "show": {

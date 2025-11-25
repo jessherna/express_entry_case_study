@@ -4,10 +4,10 @@
   "position": {
     "x": 849.91178829190051,
     "y": 97.514033680834,
-    "z": 11000,
+    "z": 9000,
     "height": 39.0056134723336,
     "width": 430.08821170809944,
-    "tabOrder": 11000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "slicer",
@@ -88,7 +88,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''_Measures''[Total Invitations]'"
+                                "Value": "'''_Measures''[Lowest CRS Score]'"
                               }
                             }
                           ]
@@ -116,7 +116,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''_Measures''[Total Invitations]'"
+                                      "Value": "'''_Measures''[Lowest CRS Score]'"
                                     }
                                   }
                                 ]
@@ -140,7 +140,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Total Invitations"
+                            "0": "Lowest CRS Score"
                           }
                         ]
                       }

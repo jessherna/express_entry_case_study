@@ -192,6 +192,9 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure tooltip = " "
+		lineageTag: 1e83eaf2-62a0-4e49-a083-56ddea8ffaa8
+
 	column _
 		formatString: 0
 		lineageTag: 9da794ab-3464-40aa-b68a-ece1073790fb

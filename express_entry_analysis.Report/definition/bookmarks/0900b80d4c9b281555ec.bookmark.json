@@ -29,18 +29,6 @@
               "objects": {}
             }
           },
-          "a84d32ae7ac30b0e9241": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "3df8172de7c0edd37278": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
           "1f5730f645ed67c6c45e": {
             "singleVisual": {
               "visualType": "textbox",

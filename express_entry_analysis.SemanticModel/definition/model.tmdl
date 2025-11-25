@@ -11,7 +11,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_QueryOrder = ["Rounds of Invitations","PR Immigration Plan","Rounds of Invitations (2)"]
 
-annotation PBI_ProTooling = ["CalcGroup","DevMode"]
+annotation PBI_ProTooling = ["CalcGroup","DevMode","DaxQueryView_Desktop"]
 
 ref table 'Rounds of Invitations'
 ref table Calendar

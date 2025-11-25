@@ -1,25 +1,34 @@
 table 'Rounds of Invitations (2)'
+	isHidden
+	excludeFromModelRefresh
 	lineageTag: ae0ae54f-bd8c-4be7-b41a-92470f098444
 
 	column 'Draw Number'
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 00d75360-7306-446d-adc0-7118347e041c
 		summarizeBy: sum
 		sourceColumn: Draw Number
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column URL
 		dataType: string
+		isHidden
 		lineageTag: 3a679b9a-1339-40bd-ae10-0e529836c9db
 		summarizeBy: none
 		sourceColumn: URL
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column Date
 		dataType: dateTime
+		isHidden
 		formatString: Long Date
 		lineageTag: d15c48e8-c76b-441a-982c-93ace7390e1a
 		summarizeBy: none
@@ -30,41 +39,55 @@ table 'Rounds of Invitations (2)'
 			relationship: d377db29-6f58-4ec9-9aa0-2bf2b1dbcbf7
 			defaultHierarchy: LocalDateTable_a616e89b-6594-4a3f-9565-2d2284d2e014.'Date Hierarchy'
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
 	column 'Round Type'
 		dataType: string
+		isHidden
 		lineageTag: 99b092d1-9ef9-4e08-a718-f1ef7b86f84f
 		summarizeBy: none
 		sourceColumn: Round Type
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column 'Invitations Issued'
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: dace2a88-d263-43ce-80c1-98e651109c18
 		summarizeBy: sum
 		sourceColumn: Invitations Issued
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Lowest CRS Score'
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: c8925501-f6e7-4bdb-8424-d93ca779f466
 		summarizeBy: sum
 		sourceColumn: Lowest CRS Score
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Category
 		dataType: string
+		isHidden
 		lineageTag: 3091e3bb-fff1-4fa1-9adb-134e739d3929
 		summarizeBy: none
 		sourceColumn: Category
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -86,6 +109,8 @@ table 'Rounds of Invitations (2)'
 				    #"Renamed Columns1" = Table.RenameColumns(#"Removed Columns",{{"Draw Number URL.1", "URL"}})
 				in
 				    #"Renamed Columns1"
+
+	changedProperty = IsHidden
 
 	annotation PBI_NavigationStepName = Navigation
 

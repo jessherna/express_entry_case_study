@@ -168,14 +168,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'WebUrl'"
+                  "Value": "'Back'"
                 }
               }
             },
@@ -189,7 +189,7 @@
             "tooltip": {
               "expr": {
                 "Literal": {
-                  "Value": "'Click to refresh'"
+                  "Value": "''"
                 }
               }
             }

@@ -1,0 +1,28 @@
+**** Introduction
+So you finished your studies as an international student, got that Post Graduation Work Permit (or in-process). You're looking into your odds of getting your Permanent Residence in Canada. After all, you have built your life here since you landed on that fateful day. A lot of information is laid out on the IRCC website. This dashboard aims to build on top of that open data to help international students and temporary workers make sense of their immigration path.
+
+** Scope of this dashboard
+- 2026-2028 Immigration Plans for Permanent Residents (Note: the immigration office published low-end and high-end for their targets, but we'll be using only the targets to set appropriate expectations)
+- Express Entry Rounds of Invitations
+- Express Entry Invitations Trend
+- Express Entry Invitation Draw Details
+
+
+** 2026-2028 Immigration Plans for Permanent Residents
+Insights:
+- 
+
+Recommendation:
+- From the top 3 targets by year, focus on Economic immigration category primarily Federal High Skilled because the target is high and the processing is less complicated. The applicant does not an employer's support in the process.
+- While the category Overall French-speaking Permanent Resident Admissions outside Quebec is not in the Top 3 targets, it is worth looking into as the targets are at significant levels of 30k/year. 
+
+
+** Express entry invitations to apply for permanent residency
+- This page presents competition ranking per CRS/Invite Ratio (high % means the competition is tough, needing high CRS score for a low number of invitations), comparison of selected year versus previous year per round type. (Note: rounds are categorized into Agriculture, Canadian Experience Class, Education occupations, Federal Skilled Trades, French Language Proficiency, Healthcare and social services occupations, Provincial Nominee Program, STEM occupations, and Trade Occupations. 
+
+Insights: 
+- In 2025, the most competitive round category is Trade Occupations having 40.40% CRS-to-Invitation Ratio (invitations: 1,250, lowest CRS: 505), followed by Education occupations at 13.20% (invitations: 3,500, lowest CRS: 462). Compared to these two, the Provincial Nominee Program has a fairly high lowest CRS score at 667 (be that 600 pts are rewarded to applicants with Provincial Nomination).  PNP at 7.76% is a less desirable path compared to Canadian Experience Class (2.17%) and the emerging French language proficiency at only 1.05%.
+
+Recommendation:
+- Learning French will increase CRS score for both Canadian Experience Class and French language proficiency routes. Thereby, the chances of getting invited for PR is higher compared to the aforementioned round types.
+

@@ -407,18 +407,6 @@
               ]
             }
           },
-          "24396dd81a91de6210d0": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "a11644f7e030513a0ce9": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
           "40794f0003bd4ade105d": {
             "singleVisual": {
               "visualType": "textbox",

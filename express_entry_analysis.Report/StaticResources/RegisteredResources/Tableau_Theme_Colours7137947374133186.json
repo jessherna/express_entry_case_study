@@ -603,5 +603,6 @@
       "fontFace": "'Segoe UI Semibold', wf_segoe-ui_semibold, helvetica, arial, sans-serif",
       "fontSize": 10
     }
-  }
+  },
+  "foregroundNeutralSecondary": "#282623"
 }

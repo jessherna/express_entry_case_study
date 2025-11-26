@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "f90c27c5b4ae8bc0de26",
   "position": {
-    "x": 128.18851251840942,
-    "y": 239.41089837997052,
+    "x": 122.55319148936171,
+    "y": 243.23506737006363,
     "z": 13000,
-    "height": 141.3843888070692,
-    "width": 289.36671575846833,
+    "height": 140.70921985815602,
+    "width": 144.34042553191489,
     "tabOrder": 13000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Median Target"
+                  "Property": "YoY Growth (2026 vs 2027)"
                 }
               },
-              "queryRef": "_Measures.Median Target",
-              "nativeQueryRef": "Median Target"
+              "queryRef": "_Measures.YoYGrowth",
+              "nativeQueryRef": "YoY Growth (2026 vs 2027)"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "Median Target"
+                "Property": "YoY Growth (2026 vs 2027)"
               }
             },
             "direction": "Descending"
@@ -154,6 +154,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -386,6 +393,51 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

@@ -16,7 +16,7 @@ annotation PBI_ProTooling = ["CalcGroup","DevMode","DaxQueryView_Desktop"]
 ref table 'Rounds of Invitations'
 ref table Calendar
 ref table _Measures
-ref table 'Measures 2'
+ref table 'Field Parameters'
 ref table 'PR Immigration Plan'
 ref table 'Rounds of Invitations (2)'
 ref table DateTableTemplate_00034162-99bf-4603-8623-6ac455affea3

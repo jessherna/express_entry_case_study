@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "67f826544a200d8285b4",
+  "name": "e8f3c24eca19ba56d47d",
   "position": {
     "x": 7.8694581280788212,
     "y": 168.7684729064039,
-    "z": 9000,
+    "z": 15000,
     "height": 39.901477832512313,
     "width": 100.19704433497537,
-    "tabOrder": 9000
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "actionButton",
@@ -150,7 +150,14 @@
             "showDefaultTooltip": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Click here to go to Overview'"
                 }
               }
             }

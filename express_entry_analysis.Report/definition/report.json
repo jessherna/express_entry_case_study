@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "Tableau_Theme_Colours24187630096231227.json",
+      "name": "Tableau_Theme_Colours7137947374133186.json",
       "reportVersionAtImport": {
         "visual": "2.4.0",
         "report": "3.0.0",
@@ -48,6 +48,9 @@
       }
     ]
   },
+  "publicCustomVisuals": [
+    "paretoEDD8E69761BA4B7BB3AA6D813990D7BF"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -64,11 +67,6 @@
       "name": "RegisteredResources",
       "type": "RegisteredResources",
       "items": [
-        {
-          "name": "Tableau_Theme_Colours24187630096231227.json",
-          "path": "Tableau_Theme_Colours24187630096231227.json",
-          "type": "CustomTheme"
-        },
         {
           "name": "overview29542443685450426.svg",
           "path": "overview29542443685450426.svg",
@@ -103,6 +101,11 @@
           "name": "ircc2743146533234926.svg",
           "path": "ircc2743146533234926.svg",
           "type": "Image"
+        },
+        {
+          "name": "Tableau_Theme_Colours7137947374133186.json",
+          "path": "Tableau_Theme_Colours7137947374133186.json",
+          "type": "CustomTheme"
         }
       ]
     }
@@ -113,7 +116,6 @@
     "defaultDrillFilterOtherVisuals": true,
     "allowChangeFilterTypes": true,
     "useEnhancedTooltips": true,
-    "filterPaneHiddenInEditMode": true,
     "useDefaultAggregateDisplayName": true
   },
   "slowDataSourceSettings": {

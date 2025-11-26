@@ -3,9 +3,9 @@
   "name": "7ebd4484956b85444cee",
   "position": {
     "x": 7.1182266009852215,
-    "y": 10.467980295566504,
+    "y": 36.847290640394093,
     "z": 1000,
-    "height": 165.39408866995075,
+    "height": 190.09852216748769,
     "width": 406.1576354679803,
     "tabOrder": 1000
   },
@@ -35,21 +35,21 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Insights'"
+                  "Value": "'About the Dashboard'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
+                  "Value": "12D"
                 }
               }
             },

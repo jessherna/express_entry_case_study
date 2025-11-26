@@ -2588,7 +2588,7 @@ cultureInfo en-CA
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "Sum Target"
+			          "ConceptualProperty": "Total Permanent Residence Recipients"
 			        }
 			      },
 			      "State": "Generated",
@@ -2693,7 +2693,7 @@ cultureInfo en-CA
 			    "measures_2": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Measures 2"
+			          "ConceptualEntity": "Field Parameters"
 			        }
 			      },
 			      "State": "Generated",
@@ -2715,7 +2715,7 @@ cultureInfo en-CA
 			    "measures_2.measure": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Measures 2",
+			          "ConceptualEntity": "Field Parameters",
 			          "ConceptualProperty": "Measures"
 			        }
 			      },
@@ -2791,7 +2791,7 @@ cultureInfo en-CA
 			    "measures_2.measures_field": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Measures 2",
+			          "ConceptualEntity": "Field Parameters",
 			          "ConceptualProperty": "Measures Fields"
 			        }
 			      },
@@ -2923,7 +2923,7 @@ cultureInfo en-CA
 			    "measures_2.measures_order": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Measures 2",
+			          "ConceptualEntity": "Field Parameters",
 			          "ConceptualProperty": "Measures Order"
 			        }
 			      },
@@ -4729,7 +4729,7 @@ cultureInfo en-CA
 			    },
 			    "measures_2_has_measure": {
 			      "Binding": {
-			        "ConceptualEntity": "Measures 2"
+			        "ConceptualEntity": "Field Parameters"
 			      },
 			      "State": "Generated",
 			      "Roles": {

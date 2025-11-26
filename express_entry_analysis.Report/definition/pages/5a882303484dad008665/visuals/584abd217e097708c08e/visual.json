@@ -153,6 +153,13 @@
                   "Value": "'Click here to go to IRCC Plan'"
                 }
               }
+            },
+            "showDefaultTooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }

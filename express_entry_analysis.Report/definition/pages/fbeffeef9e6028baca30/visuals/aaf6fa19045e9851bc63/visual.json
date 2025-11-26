@@ -4,10 +4,10 @@
   "position": {
     "x": 8.3128078817734039,
     "y": 247.38916256157628,
-    "z": 11000,
+    "z": 10000,
     "height": 39.014778325123153,
     "width": 99.3103448275862,
-    "tabOrder": 11000
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "actionButton",
@@ -151,6 +151,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Click here to go to Details'"
+                }
+              }
+            },
+            "showDefaultTooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

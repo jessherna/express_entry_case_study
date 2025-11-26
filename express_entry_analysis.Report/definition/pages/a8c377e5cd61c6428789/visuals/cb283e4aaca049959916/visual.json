@@ -4,10 +4,10 @@
   "position": {
     "x": 7.8694581280788212,
     "y": 208.07881773399009,
-    "z": 12000,
+    "z": 11000,
     "height": 39.901477832512313,
     "width": 100.19704433497537,
-    "tabOrder": 12000
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "actionButton",
@@ -151,6 +151,13 @@
               "expr": {
                 "Literal": {
                   "Value": "'Click here to go to Trend'"
+                }
+              }
+            },
+            "showDefaultTooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

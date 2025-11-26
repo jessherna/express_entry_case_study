@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "fd0ad181d4962b882ae3",
   "position": {
-    "x": 8.12807881773399,
-    "y": 159.31034482758622,
+    "x": 14.088669950738916,
+    "y": 37.389162561576356,
     "z": 1000,
-    "height": 167.4384236453202,
+    "height": 211.33004926108373,
     "width": 603.10344827586209,
     "tabOrder": 1000
   },
@@ -45,7 +45,32 @@
                     }
                   },
                   {
-                    "value": " at 13.20% (invitations: 3,500, lowest CRS: 462). Compared to these two, the Provincial Nominee Program has a fairly high lowest CRS score at 667 (be that 600 pts are rewarded to applicants with Provincial Nomination). PNP at 7.76% is a less desirable path compared to Canadian Experience Class (2.17%) and the emerging French language proficiency at only 1.05%.",
+                    "value": " at 13.20% (invitations: 3,500, lowest CRS: 462). Compared to these two, the Provincial Nominee Program has a fairly high lowest CRS score at 667 (be that 600 pts are rewarded to applicants with Provincial Nomination). PNP at 7.11% is a less desirable path compared to Canadian Experience Class (2.17%) and the emerging French language proficiency at only 1.05%.",
+                    "textStyle": {
+                      "fontSize": "10.5pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "French language proficiency ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "10.5pt"
+                    }
+                  },
+                  {
+                    "value": "saw the most increase in number of invitations (+13,800) and a lower CRS score (-43) in 2025 compared to the previous year.",
                     "textStyle": {
                       "fontSize": "10.5pt"
                     }

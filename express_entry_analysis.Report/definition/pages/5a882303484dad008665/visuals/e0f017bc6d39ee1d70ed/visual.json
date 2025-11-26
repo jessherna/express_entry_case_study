@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "e0f017bc6d39ee1d70ed",
   "position": {
-    "x": 129.13107511045655,
-    "y": 396.8188512518409,
+    "x": 279.60283687943263,
+    "y": 405.78723404255317,
     "z": 12000,
-    "height": 313.87334315169363,
-    "width": 1145.2135493372605,
+    "height": 305.02127659574467,
+    "width": 987.6879432624113,
     "tabOrder": 12000
   },
   "visual": {
@@ -76,11 +76,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Sum Target"
+                  "Property": "Total Permanent Residence Recipients"
                 }
               },
               "queryRef": "_Measures.Sum Target",
-              "nativeQueryRef": "Sum Target"
+              "nativeQueryRef": "Total Permanent Residence Recipients"
             }
           ]
         }
@@ -95,7 +95,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "Sum Target"
+                "Property": "Total Permanent Residence Recipients"
               }
             },
             "direction": "Descending"
@@ -257,6 +257,20 @@
                   "Value": "false"
                 }
               }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
             }
           },
           "selector": {
@@ -279,7 +293,7 @@
                               "Entity": "_Measures"
                             }
                           },
-                          "Property": "Sum Target"
+                          "Property": "Total Permanent Residence Recipients"
                         }
                       },
                       "FillRule": {
@@ -294,7 +308,59 @@
                           "max": {
                             "color": {
                               "Literal": {
-                                "Value": "'#F28E2B'"
+                                "Value": "'#3b5b7d'"
+                              }
+                            }
+                          },
+                          "nullColoringStrategy": {
+                            "strategy": {
+                              "Literal": {
+                                "Value": "'asZero'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "FillRule": {
+                      "Input": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "_Measures"
+                            }
+                          },
+                          "Property": "Total Permanent Residence Recipients"
+                        }
+                      },
+                      "FillRule": {
+                        "linearGradient3": {
+                          "min": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#000000'"
+                              }
+                            }
+                          },
+                          "mid": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#1a1a1a'"
+                              }
+                            }
+                          },
+                          "max": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#FFFFFF'"
                               }
                             }
                           },
@@ -427,6 +493,18 @@
                   "Value": "11.7D"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.1
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -548,7 +626,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "486D"
+                  "Value": "313.5297812877557D"
                 }
               }
             }
@@ -614,7 +692,7 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI Light'', wf_segoe-ui_light, helvetica, arial, sans-serif'"
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             },
@@ -682,7 +760,59 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Canvas'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

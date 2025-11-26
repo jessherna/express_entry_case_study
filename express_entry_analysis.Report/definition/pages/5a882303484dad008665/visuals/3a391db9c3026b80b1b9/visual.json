@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "3a391db9c3026b80b1b9",
   "position": {
-    "x": 129.07563025210084,
-    "y": 84.974789915966383,
+    "x": 122.55319148936171,
+    "y": 79.802955665024626,
     "z": 11000,
-    "height": 141.98319327731093,
-    "width": 289.34453781512605,
+    "height": 141.61702127659575,
+    "width": 144.34042553191489,
     "tabOrder": 11000
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Average Target"
+                  "Property": "Total Permanent Residence Recipients"
                 }
               },
-              "queryRef": "_Measures.Avg Target",
-              "nativeQueryRef": "Average Target"
+              "queryRef": "_Measures.Total PR Recipients",
+              "nativeQueryRef": "Total Permanent Residence Recipients"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "Average Target"
+                "Property": "Total Permanent Residence Recipients"
               }
             },
             "direction": "Descending"
@@ -154,6 +154,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -341,6 +348,20 @@
           "selector": {
             "id": "default"
           }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Total PR Recipients"
+          }
         }
       ]
     },
@@ -386,6 +407,51 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

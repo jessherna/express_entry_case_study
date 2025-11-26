@@ -47,19 +47,6 @@
         },
         {
           "location": {
-            "x": 1022,
-            "y": 118
-          },
-          "nodeIndex": "Measures 2",
-          "nodeLineageTag": "3da184c9-6f8f-431f-a053-7049a3e9ff42",
-          "size": {
-            "height": 152,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 1306,
             "y": 106
           },
@@ -80,6 +67,18 @@
           "nodeLineageTag": "ae0ae54f-bd8c-4be7-b41a-92470f098444",
           "size": {
             "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1022,
+            "y": 118
+          },
+          "nodeIndex": "Field Parameters",
+          "size": {
+            "height": 152,
             "width": 234
           },
           "zIndex": 0

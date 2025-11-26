@@ -178,7 +178,7 @@ table _Measures
 			```
 		lineageTag: f649ad21-b09b-4c24-acda-c27e3c24bccc
 
-	measure 'Sum Target' = SUMX('PR Immigration Plan', 'PR Immigration Plan'[Target])
+	measure 'Total Permanent Residence Recipients' = SUMX('PR Immigration Plan', 'PR Immigration Plan'[Target])
 		formatString: #,0
 		lineageTag: 100086e3-b363-4270-b1a1-d71c153fb3d7
 
@@ -187,13 +187,45 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Median Target' = MEDIAN('PR Immigration Plan'[Target])
+	measure 'Median Target' = MEDIANX('PR Immigration Plan', 'PR Immigration Plan'[Target])
 		lineageTag: ab2287fb-d6d6-4915-8090-d09b94a46a8f
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure tooltip = " "
 		lineageTag: 1e83eaf2-62a0-4e49-a083-56ddea8ffaa8
+
+	measure TotalTargetPerYear = ```
+			
+			CALCULATE(
+			    SUM('PR Immigration Plan'[Target]),
+			    ALLEXCEPT('PR Immigration Plan', 'PR Immigration Plan'[Year])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 8a3bd63c-f718-4afb-96b8-a3a09fe08ab4
+
+	measure 'YoY Growth (2026 vs 2027)' = ```
+			
+			VAR CurrentYear = 2027
+			VAR PrevYear = CurrentYear - 1
+			VAR CurrentTotal = 
+			    CALCULATE(
+			        SUM('PR Immigration Plan'[Target]),
+			        'PR Immigration Plan'[Year] = CurrentYear
+			    )
+			VAR PrevTotal = 
+			    CALCULATE(
+			        SUM('PR Immigration Plan'[Target]),
+			        'PR Immigration Plan'[Year] = PrevYear
+			    )
+			RETURN
+			DIVIDE(CurrentTotal - PrevTotal, PrevTotal)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 0b4cf7e9-5336-4e21-9aae-16642fc3ac14
 
 	column _
 		formatString: 0

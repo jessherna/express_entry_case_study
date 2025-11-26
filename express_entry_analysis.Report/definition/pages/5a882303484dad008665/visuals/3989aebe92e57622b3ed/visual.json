@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "3989aebe92e57622b3ed",
   "position": {
-    "x": 283.71134020618553,
-    "y": 84.830633284241529,
+    "x": 857.87234042553189,
+    "y": 79.886524822695037,
     "z": 10000,
-    "height": 295.9646539027982,
-    "width": 501.44329896907215,
+    "height": 304.11347517730496,
+    "width": 409.41843971631204,
     "tabOrder": 10000
   },
   "visual": {
-    "visualType": "donutChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
@@ -23,11 +23,11 @@
                       "Entity": "PR Immigration Plan"
                     }
                   },
-                  "Property": "Category"
+                  "Property": "SubCategory"
                 }
               },
-              "queryRef": "PR Immigration Plan.Category",
-              "nativeQueryRef": "Category",
+              "queryRef": "PR Immigration Plan.SubCategory",
+              "nativeQueryRef": "SubCategory",
               "active": true
             }
           ]
@@ -42,12 +42,13 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Sum Target"
+                  "Property": "Total Permanent Residence Recipients"
                 }
               },
               "queryRef": "_Measures.Sum Target",
               "nativeQueryRef": "Target",
-              "displayName": "Target"
+              "displayName": "Target",
+              "format": "0"
             }
           ]
         }
@@ -62,10 +63,10 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "Sum Target"
+                "Property": "Total Permanent Residence Recipients"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -105,7 +106,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
+                }
+              }
+            },
+            "showGradientLegend": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -125,14 +133,7 @@
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "labelStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Data value, percent of total'"
+                  "Value": "1000D"
                 }
               }
             },
@@ -150,24 +151,139 @@
                 }
               }
             },
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'preferOutside'"
-                }
-              }
-            },
-            "percentageLabelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            },
             "bold": {
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "enableValueDataLabel": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelOverflow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'OutsideEnd'"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "maxMarginFactor": {
+              "expr": {
+                "Literal": {
+                  "Value": "50L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {}
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "FillRule": {
+                      "Input": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "_Measures"
+                            }
+                          },
+                          "Property": "Total Permanent Residence Recipients"
+                        }
+                      },
+                      "FillRule": {
+                        "linearGradient2": {
+                          "min": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#b8c9dc'"
+                              }
+                            }
+                          },
+                          "max": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#4E79A7'"
+                              }
+                            }
+                          },
+                          "nullColoringStrategy": {
+                            "strategy": {
+                              "Literal": {
+                                "Value": "'asZero'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -208,10 +324,62 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Top 3 Targets by Immigrant Category'"
+                  "Value": "'Top 3 Economic Immigration Paths'"
                 }
               }
             },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "5D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
             "show": {
               "expr": {
                 "Literal": {
@@ -228,7 +396,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "2515f14818c97e268113",
+        "name": "de47f2104e0662da5ae5",
         "field": {
           "Column": {
             "Expression": {
@@ -236,7 +404,7 @@
                 "Entity": "PR Immigration Plan"
               }
             },
-            "Property": "Category"
+            "Property": "SubCategory"
           }
         },
         "type": "TopN",
@@ -269,7 +437,7 @@
                               "Source": "p"
                             }
                           },
-                          "Property": "Category"
+                          "Property": "SubCategory"
                         },
                         "Name": "field"
                       }
@@ -284,7 +452,7 @@
                                 "Source": "_"
                               }
                             },
-                            "Property": "Sum Target"
+                            "Property": "Total Permanent Residence Recipients"
                           }
                         }
                       }
@@ -313,7 +481,7 @@
                             "Source": "p"
                           }
                         },
-                        "Property": "Category"
+                        "Property": "SubCategory"
                       }
                     }
                   ],
@@ -327,21 +495,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "82cc12e03687e16532b7",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "PR Immigration Plan"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Categorical",
-        "howCreated": "User"
       }
     ]
   }

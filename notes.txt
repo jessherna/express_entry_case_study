@@ -10,7 +10,7 @@ So you finished your studies as an international student, got that Post Graduati
 
 ** 2026-2028 Immigration Plans for Permanent Residents
 Insights:
-- 
+- Top 3 targets for permanent residents include Economic (, Family and Refugees and Protected Persons. These categories are further divided into subcategories.
 
 Recommendation:
 - From the top 3 targets by year, focus on Economic immigration category primarily Federal High Skilled because the target is high and the processing is less complicated. The applicant does not an employer's support in the process.
@@ -18,11 +18,75 @@ Recommendation:
 
 
 ** Express entry invitations to apply for permanent residency
-- This page presents competition ranking per CRS/Invite Ratio (high % means the competition is tough, needing high CRS score for a low number of invitations), comparison of selected year versus previous year per round type. (Note: rounds are categorized into Agriculture, Canadian Experience Class, Education occupations, Federal Skilled Trades, French Language Proficiency, Healthcare and social services occupations, Provincial Nominee Program, STEM occupations, and Trade Occupations. 
+- This page presents competition ranking per CRS/Invite Ratio (high % means the competition is tough, needing high CRS score for a low number of invitations), comparison of selected year versus previous year per round type. (Note: rounds are categorized into Agriculture, Canadian Experience Class, Education occupations, Federal Skilled Trades, French Language Proficiency, Healthcare and social services occupations, Provincial Nominee Program, STEM occupations, and Trade Occupations.)
+
+- Each Express Entry round type's values on number of invitations and lowest CRS score. 
+
 
 Insights: 
 - In 2025, the most competitive round category is Trade Occupations having 40.40% CRS-to-Invitation Ratio (invitations: 1,250, lowest CRS: 505), followed by Education occupations at 13.20% (invitations: 3,500, lowest CRS: 462). Compared to these two, the Provincial Nominee Program has a fairly high lowest CRS score at 667 (be that 600 pts are rewarded to applicants with Provincial Nomination).  PNP at 7.76% is a less desirable path compared to Canadian Experience Class (2.17%) and the emerging French language proficiency at only 1.05%.
 
 Recommendation:
 - Learning French will increase CRS score for both Canadian Experience Class and French language proficiency routes. Thereby, the chances of getting invited for PR is higher compared to the aforementioned round types.
+
+*** Express Entry Invitations Trend
+
+About This Page  
+This page summarizes monthly trends across Express Entry round types using three key metrics: CRS-to-Invitation Ratio, Total Invitations, and Lowest CRS Score. The CRS/Invitation Ratio is calculated by dividing the lowest CRS score by the number of invitations issued. An average line is included to help you compare performance across categories. Like the Overview page, you can use the year slicer to focus on specific time periods.
+
+---
+
+Insights
+- In 2025, the most frequent draw types were Canadian Experience Class, Provincial Nominee Program (PNP), Healthcare & Social Services, and French Language Proficiency.  
+- Based on CRS/Invitation ratios, Canadian Experience Class and French Language Proficiency consistently performed below the average line—indicating more favorable conditions—except in May. PNP rounds tended to exceed the average ratio monthly.  
+- French Language Proficiency draws issued more invitations per month than most other categories.  
+- All round types averaged below the CRS score benchmark, except PNP, which consistently hovered around 700 points.
+
+---
+
+Recommendation  
+If you're aiming for permanent residence, French Language Proficiency offers the most favorable path based on invitation volume and CRS score trends—followed closely by Canadian Experience Class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

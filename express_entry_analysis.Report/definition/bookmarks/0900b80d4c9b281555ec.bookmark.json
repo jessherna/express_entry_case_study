@@ -11,21 +11,9 @@
     "sections": {
       "a8c377e5cd61c6428789": {
         "visualContainers": {
-          "c2f38b82bb1547941a8d": {
+          "0f4abe4355879c152193": {
             "singleVisual": {
-              "visualType": "image",
-              "objects": {}
-            }
-          },
-          "8925eb21c784e71b4407": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "7037f880a92bebccd6e1": {
-            "singleVisual": {
-              "visualType": "shape",
+              "visualType": "actionButton",
               "objects": {}
             }
           },
@@ -35,29 +23,168 @@
               "objects": {}
             }
           },
-          "feeb428050e751462e7c": {
+          "3a6336eecd670320c564": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "aafb92da15a20ded14b4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Field Parameters"
+                        }
+                      },
+                      "Property": "Measures"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
             "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "0f4abe4355879c152193": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "e90a29d23d5427d7613c": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "f",
+                                "Entity": "Field Parameters",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "In": {
+                                    "Expressions": [
+                                      {
+                                        "Column": {
+                                          "Expression": {
+                                            "SourceRef": {
+                                              "Source": "f"
+                                            }
+                                          },
+                                          "Property": "Measures Fields"
+                                        }
+                                      }
+                                    ],
+                                    "Values": [
+                                      [
+                                        {
+                                          "Literal": {
+                                            "Value": "'''_Measures''[CRS/Invite Ratio]'"
+                                          }
+                                        }
+                                      ]
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Basic'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "selection": [
+                    {
+                      "properties": {
+                        "strictSingleSelect": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Field Parameters"
+                        }
+                      },
+                      "Property": "Measures"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Field Parameters"
+                        }
+                      },
+                      "Property": "Measures"
+                    }
+                  }
+                ]
+              },
+              "cachedFilterDisplayItems": [
+                {
+                  "id": {
+                    "scopeId": {
+                      "Comparison": {
+                        "ComparisonKind": 0,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "Field Parameters"
+                              }
+                            },
+                            "Property": "Measures Fields"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "'''_Measures''[CRS/Invite Ratio]'"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "displayName": "CRS/Invite Ratio"
+                }
+              ]
             }
           },
           "51f35cb94ebe0bd68910": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "17a46b38656a501a0ec7",
+                  "name": "a02641c6e34093050320",
                   "type": "Advanced",
                   "expression": {
                     "HierarchyLevel": {
@@ -216,7 +343,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "471237493cae0d9e5031",
+                  "name": "52b2c003b3bc51ae23e8",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -231,7 +358,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "c436dc29dea91e15e3a3",
+                  "name": "f2fd4c4693d0a09a41c2",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -246,7 +373,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "5c13f0aacc473a0e6ded",
+                  "name": "2996f43aa0d4e5db2d41",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -255,7 +382,7 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "Total Invitations"
+                      "Property": "CRS/Invite Ratio"
                     }
                   },
                   "howCreated": 0
@@ -280,6 +407,18 @@
                 ]
               },
               "projections": {
+                "Y": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "CRS/Invite Ratio"
+                    }
+                  }
+                ],
                 "Category": [
                   {
                     "Column": {
@@ -303,18 +442,6 @@
                       "Property": "Round Type"
                     }
                   }
-                ],
-                "Y": [
-                  {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "_Measures"
-                        }
-                      },
-                      "Property": "Total Invitations"
-                    }
-                  }
                 ]
               },
               "parameters": {
@@ -324,7 +451,7 @@
                       "Column": {
                         "Expression": {
                           "SourceRef": {
-                            "Entity": "Measures 2"
+                            "Entity": "Field Parameters"
                           }
                         },
                         "Property": "Measures"
@@ -337,20 +464,32 @@
               }
             }
           },
-          "3a6336eecd670320c564": {
+          "7037f880a92bebccd6e1": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "77e85880b8865d44bb54": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "7990136896e73ad2ec2e": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "7b8364e365a096887190",
-                  "type": "Categorical",
+                  "name": "f201e29930b43c0118e0",
+                  "type": "Advanced",
                   "expression": {
-                    "Column": {
+                    "Measure": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Measures 2"
+                          "Entity": "_Measures"
                         }
                       },
-                      "Property": "Measures"
+                      "Property": "tooltip"
                     }
                   },
                   "howCreated": 0
@@ -358,132 +497,21 @@
               ]
             },
             "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "general": [
-                    {
-                      "properties": {
-                        "filter": {
-                          "filter": {
-                            "Version": 2,
-                            "From": [
-                              {
-                                "Name": "m",
-                                "Entity": "Measures 2",
-                                "Type": 0
-                              }
-                            ],
-                            "Where": [
-                              {
-                                "Condition": {
-                                  "In": {
-                                    "Expressions": [
-                                      {
-                                        "Column": {
-                                          "Expression": {
-                                            "SourceRef": {
-                                              "Source": "m"
-                                            }
-                                          },
-                                          "Property": "Measures Fields"
-                                        }
-                                      }
-                                    ],
-                                    "Values": [
-                                      [
-                                        {
-                                          "Literal": {
-                                            "Value": "'''_Measures''[Total Invitations]'"
-                                          }
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  ],
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Basic'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ],
-                  "selection": [
-                    {
-                      "properties": {
-                        "strictSingleSelect": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "true"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Measures 2"
-                        }
-                      },
-                      "Property": "Measures"
-                    }
-                  }
-                ]
-              },
-              "cachedFilterDisplayItems": [
-                {
-                  "id": {
-                    "scopeId": {
-                      "Comparison": {
-                        "ComparisonKind": 0,
-                        "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Entity": "Measures 2"
-                              }
-                            },
-                            "Property": "Measures Fields"
-                          }
-                        },
-                        "Right": {
-                          "Literal": {
-                            "Value": "'''_Measures''[Total Invitations]'"
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "displayName": "Total Invitations"
-                }
-              ]
+              "visualType": "card",
+              "objects": {}
+            }
+          },
+          "8925eb21c784e71b4407": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
             }
           },
           "a1fa30a5ecb250163e2a": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "431798b2061d9cdb1185",
+                  "name": "3a08f267731c7a549912",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -503,60 +531,6 @@
               "visualType": "slicer",
               "objects": {
                 "merge": {
-                  "general": [
-                    {
-                      "properties": {
-                        "filter": {
-                          "filter": {
-                            "Version": 2,
-                            "From": [
-                              {
-                                "Name": "r",
-                                "Entity": "Rounds of Invitations",
-                                "Type": 0
-                              }
-                            ],
-                            "Where": [
-                              {
-                                "Condition": {
-                                  "In": {
-                                    "Expressions": [
-                                      {
-                                        "Column": {
-                                          "Expression": {
-                                            "SourceRef": {
-                                              "Source": "r"
-                                            }
-                                          },
-                                          "Property": "Round Type"
-                                        }
-                                      }
-                                    ],
-                                    "Values": [
-                                      [
-                                        {
-                                          "Literal": {
-                                            "Value": "'Canadian Experience Class'"
-                                          }
-                                        }
-                                      ],
-                                      [
-                                        {
-                                          "Literal": {
-                                            "Value": "'French language proficiency (Version 1)'"
-                                          }
-                                        }
-                                      ]
-                                    ]
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  ],
                   "data": [
                     {
                       "properties": {
@@ -586,6 +560,42 @@
                   }
                 ]
               }
+            }
+          },
+          "aa01b173519907135b76": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "c2f38b82bb1547941a8d": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "cb283e4aaca049959916": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "e8f3c24eca19ba56d47d": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "e90a29d23d5427d7613c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "feeb428050e751462e7c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
             }
           }
         }

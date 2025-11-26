@@ -1,4 +1,4 @@
-table 'Measures 2'
+table 'Field Parameters'
 	lineageTag: 3da184c9-6f8f-431f-a053-7049a3e9ff42
 
 	column Measures
@@ -36,13 +36,13 @@ table 'Measures 2'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Measures 2' = calculated
+	partition 'Field Parameters' = calculated
 		mode: import
 		source =
 				{
-				    ("Total Invitations", NAMEOF('_Measures'[Total Invitations]), 0),
-				    ("Lowest CRS Score", NAMEOF('_Measures'[Lowest CRS Score]), 1),
-				    ("CRS/Invite Ratio", NAMEOF('_Measures'[CRS/Invite Ratio]), 2)
+				    ("Total Invitations", NAMEOF('_Measures'[Total Invitations]), 1),
+				    ("Lowest CRS Score", NAMEOF('_Measures'[Lowest CRS Score]), 2),
+				    ("CRS/Invite Ratio", NAMEOF('_Measures'[CRS/Invite Ratio]), 0)
 				}
 
 	annotation PBI_Id = 7a0160e6511047dfb9cb32b837316547

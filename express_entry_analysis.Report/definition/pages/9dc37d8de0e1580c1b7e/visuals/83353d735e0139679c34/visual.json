@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "b5abacb0290750bedc04",
+  "name": "83353d735e0139679c34",
   "position": {
-    "x": 14.088669950738916,
-    "y": 27.0935960591133,
-    "z": 1001,
-    "height": 125.17241379310344,
-    "width": 603.10344827586209,
-    "tabOrder": 1001
+    "x": 5.4433497536945765,
+    "y": 20.412927912669385,
+    "z": 1,
+    "height": 220.66502463054186,
+    "width": 406.1576354679803,
+    "tabOrder": 1
   },
   "visual": {
     "visualType": "textbox",
@@ -19,15 +19,38 @@
               {
                 "textRuns": [
                   {
-                    "value": "\t\t"
+                    "value": "Draws are increasingly category-based.",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "10.5pt"
+                    }
                   },
                   {
-                    "value": "This page presents competition ranking per CRS/Invite Ratio (high % means the competition is tough, needing high CRS score for a low number of invitations), comparison of selected year versus previous year per round type. (Note: rounds are categorized into Agriculture, Canadian Experience Class, Education occupations, Federal Skilled Trades, French Language Proficiency, Healthcare and social services occupations, Provincial Nominee Program, STEM occupations, and Trade Occupations.",
+                    "value": " Recent rounds show a strong emphasis on targeted occupations like healthcare, trades, education, and French language proficiency. This reflects IRCC’s evolving priorities and labor market needs.",
                     "textStyle": {
                       "fontSize": "10.5pt"
                     }
                   }
-                ]
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Invitation volumes fluctuate.",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "10.5pt"
+                    }
+                  },
+                  {
+                    "value": " Larger draws (e.g., 6,000 invitations) tend to occur in broader categories, while smaller draws target niche groups. Monitoring these patterns can help you anticipate pool clearance and competitiveness.",
+                    "textStyle": {
+                      "fontSize": "10.5pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
               }
             ]
           }
@@ -41,7 +64,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },

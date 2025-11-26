@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "a1fa30a5ecb250163e2a",
   "position": {
-    "x": 122.53313696612665,
-    "y": 82.00294550810014,
+    "x": 118.92198581560284,
+    "y": 81.702127659574472,
     "z": 10000,
-    "height": 68.807069219440351,
-    "width": 722.00294550810008,
+    "height": 68.99290780141844,
+    "width": 725.33333333333337,
     "tabOrder": 10000
   },
   "visual": {
@@ -56,54 +56,6 @@
                 "Literal": {
                   "Value": "1D"
                 }
-              }
-            },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "r",
-                    "Entity": "Rounds of Invitations",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "r"
-                                }
-                              },
-                              "Property": "Round Type"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Canadian Experience Class'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'French language proficiency (Version 1)'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
               }
             }
           }
